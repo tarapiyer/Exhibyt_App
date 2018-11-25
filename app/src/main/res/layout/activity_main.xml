@@ -6,13 +6,58 @@
     android:layout_height="match_parent"
     tools:context="cs147.exhibyt.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/upload_work"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToOutline="true"
+        android:background="#F8F8F8">
+
+        <View
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="114dp"
+            android:background="@drawable/plane"
+            />
+
+        <View
+            android:id="@+id/halloween_1"
+            android:layout_width="147dp"
+            android:layout_height="102dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="188dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/halloween_1746329_1920"
+            />
+
+        <View
+            android:id="@+id/image_3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/pumpkins"
+            />
+
+        <View
+            android:id="@+id/mask_202821"
+            android:layout_width="148dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="187dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="229dp"
+            android:background="@drawable/mask_2028211_1280"
+            />
+
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
