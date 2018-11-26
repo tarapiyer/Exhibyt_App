@@ -33,7 +33,7 @@
             android:layout_marginLeft="188dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="112dp"
-            android:background="@drawable/halloween_1746329_1920"
+            android:background="@drawable/halloween"
             />
 
         <View
