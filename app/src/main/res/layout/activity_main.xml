@@ -55,7 +55,7 @@
             android:layout_marginLeft="187dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="229dp"
-            android:background="@drawable/mask_2028211_1280"
+            android:background="@drawable/mask"
             />
 
     </RelativeLayout>
