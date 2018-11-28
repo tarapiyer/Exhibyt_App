@@ -45,5 +45,6 @@ public class ResponsesAdapter extends ArrayAdapter {
         curr = (TextView) qsView.findViewById(R.id.userCommenting);
         curr.setText(q.getUsername());
         return qsView;
+        //Let's try now
     }
 }
