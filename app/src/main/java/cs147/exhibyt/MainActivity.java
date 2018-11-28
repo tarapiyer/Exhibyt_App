@@ -1,7 +1,9 @@
 package cs147.exhibyt;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 
 /**
@@ -16,5 +18,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void goToQuestions(View v){
+        Intent myIntent = new Intent(this, MessagesActivity.class);
+        startActivity(myIntent);
+    }
+
+    public void goToAddQs(View v){
+        Intent myIntent = new Intent(this, AddQuestionActivity.class);
+        startActivity(myIntent);
     }
 }
