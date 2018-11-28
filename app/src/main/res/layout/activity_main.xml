@@ -5,89 +5,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cs147.exhibyt.MainActivity">
-
-
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/upload_work"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="#F8F8F8">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/goToQs"
-                android:text="Questions"
-                android:onClick="goToQuestions"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent">
-            </TextView>
+            android:text="Artwork"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            />
 
-            <TextView
-                android:id="@+id/goToAddQs"
-                android:text="Add Questions"
-                android:onClick="goToAddQs"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent">
-            </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Questions"/>
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/goToViewQ"
-                android:text="View Question"
-                android:onClick="goToViewQ"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent">
-            </TextView>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/upload_work_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        </LinearLayout>
-
-        <View
+        <ImageView
             android:id="@+id/image"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="28dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="114dp"
-            android:background="@drawable/plane"
-            />
+            android:layout_marginRight="10dp"
+            android:background="@drawable/plane" />
 
-        <View
+        <ImageView
             android:id="@+id/halloween_1"
-            android:layout_width="147dp"
-            android:layout_height="102dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="188dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="112dp"
-            android:background="@drawable/halloween"
-            />
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/halloween" />
+    </LinearLayout>
 
-        <View
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/upload_work_part2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
             android:id="@+id/image_3"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="27dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="230dp"
             android:background="@drawable/pumpkins"
-            />
+            android:layout_marginRight="10dp"/>
 
-        <View
+        <ImageView
             android:id="@+id/mask_202821"
-            android:layout_width="148dp"
+            android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="187dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="229dp"
-            android:background="@drawable/mask"
-            />
+            android:background="@drawable/mask" />
+    </LinearLayout>
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/noun_bell"-->
+        <!--android:layout_weight="1"/>-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:src="@drawable/noun_bell"-->
+        <!--android:layout_margin="16dp" />-->
+    <include
+        layout="@layout/activity_navigation_bar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"></include>
+</LinearLayout>
 
-    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
