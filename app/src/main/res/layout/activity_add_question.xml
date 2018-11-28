@@ -1,9 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cs147.exhibyt.AddQuestionActivity">
+    tools:context="cs147.exhibyt.AddQuestionActivity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/upload_work"
+        android:layout_width="369dp"
+        android:layout_height="fill_parent"
+        android:background="#F8F8F8"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:orientation="vertical">-->
+
+    <!--Back button-->
+    <!--<View
+        android:id="@+id/icons_navig"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/Back"
+        />-->
+
+    <!--TODO: Maybe add the popup-->
+    <View
+        android:id="@+id/close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="329dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        />
+
+    <!--TEXT: Add Question-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal"
+        android:text="Add Question"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <!--TextRect-->
+    <EditText
+        android:id="@+id/rectangle_2"
+        android:layout_width="326.54dp"
+        android:layout_height="143.82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16.15dp"
+        android:layout_marginTop="64.82dp"/>
+
+    <!--Text box-->
+    <EditText
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="71dp"
+        android:inputType="textMultiLine|textLongMessage"
+        android:text="Write questions here:
+
+            Some suggestions
+
+                     Which artwork is the better one
+                     Please give me some feedback
+"
+        android:textAppearance="@android:style/TextAppearance.Material.Caption" />
+
+    <!--TEXT: include artwork to give context-->
+    <TextView
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="224dp"
+        android:text="Include artwork to give context"
+        android:textAppearance="@android:style/TextAppearance.Theme" />
+
+    <!-- Fall art-->
+    <!--<View
+        android:id="@+id/autumn_3735"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/autumn3735547_1920" />
+
+    <!-checkbox-->
+    <!--<View
+        android:id="@+id/switches_ch"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/CheckboxOffDark" />-->
+
+    <!--raven-->
+    <!--<View
+        android:id="@+id/raven_10028"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="261dp"
+        android:background="@drawable/raven1002849_1920" />-->
+
+    <!--checkbox-->
+    <!--<View
+        android:id="@+id/switches_ch"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="319dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/CheckboxOffDark" />-->
+
+    <!-- Fall art-->
+    <!--<View
+        android:id="@+id/autumn_3735"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="375dp"
+        android:background="@drawable/autumn3735547_1920" />-->
+
+    <!--checkbox-->
+    <!--<View
+        android:id="@+id/switches_ch"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="458dp"
+        android:background="@drawable/CheckboxOffDark" />-->
+
+    <!--raven-->
+    <!--<View
+        android:id="@+id/raven_10028"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="375dp"
+        android:background="@drawable/raven1002849_1920" />-->
+
+    <!--checkbox-->
+    <!--<View
+        android:id="@+id/switches_ch"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="319dp"
+        android:layout_marginTop="458dp"
+        android:background="@drawable/CheckboxOffDark" />-->
+
+    <!--<Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:background="#FFFFFF"
+        android:text="Next"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible"
+        tools:text="Next" />-->
+
+
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-72dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="180dp" />-->
+
+</LinearLayout>
