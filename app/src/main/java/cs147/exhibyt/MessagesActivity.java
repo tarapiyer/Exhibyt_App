@@ -37,6 +37,26 @@ public class MessagesActivity extends AppCompatActivity {
         Qarray.add(new Question("What is scary?"));
         Qarray.add(new Question("What do you like about this picture?"));
         Qarray.add(new Question("Moo"));
+        Qarray.add(new Question("What is the best part of this picture?"));
+        Qarray.add(new Question("What is the worst part of this picture?"));
+        Qarray.add(new Question("What is scary?"));
+        Qarray.add(new Question("What do you like about this picture?"));
+        Qarray.add(new Question("Moo"));
+        Qarray.add(new Question("What is the best part of this picture?"));
+        Qarray.add(new Question("What is the worst part of this picture?"));
+        Qarray.add(new Question("What is scary?"));
+        Qarray.add(new Question("What do you like about this picture?"));
+        Qarray.add(new Question("Moo"));
+        Qarray.add(new Question("What is the best part of this picture?"));
+        Qarray.add(new Question("What is the worst part of this picture?"));
+        Qarray.add(new Question("What is scary?"));
+        Qarray.add(new Question("What do you like about this picture?"));
+        Qarray.add(new Question("Moo"));
+        Qarray.add(new Question("What is the best part of this picture?"));
+        Qarray.add(new Question("What is the worst part of this picture?"));
+        Qarray.add(new Question("What is scary?"));
+        Qarray.add(new Question("What do you like about this picture?"));
+        Qarray.add(new Question("Moo"));
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messages);

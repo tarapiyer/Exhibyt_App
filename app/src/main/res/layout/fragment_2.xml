@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <include
-        layout="@layout/question_view"
+        layout="@layout/question_list_view"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp"></include>
 
