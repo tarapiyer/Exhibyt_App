@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="?actionBarSize"
-            app:tabBackground="@color/colorPrimary"
+            app:tabBackground="@color/colorWhite"
             app:tabGravity="fill"
             app:tabIndicatorColor="@color/colorWhite"
             app:tabIndicatorHeight="4dp"
@@ -45,13 +45,19 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"/>
 
+    </LinearLayout>
 
-        <include
+    <include
         layout="@layout/activity_navigation_bar"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp"></include>
 
-    </LinearLayout>
-
-
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dp"
+        android:elevation="8dp" />
 </RelativeLayout>
