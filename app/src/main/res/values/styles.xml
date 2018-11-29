@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Code from https://medium.com/@droidbyme/android-material-design-tabs-tab-layout-with-swipe-884085ae80ff -->
+    <style name="MyToolbarTheme"
+        parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="titleTextColor">@color/colorWhite</item>
+    </style>
+
 </resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Code taken from https://medium.com/@droidbyme/android-material-design-tabs-tab-layout-with-swipe-884085ae80ff -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/question_view"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"></include>
+
+</RelativeLayout>

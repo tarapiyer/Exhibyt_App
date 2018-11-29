@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/upload_work_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/plane" />
+
+        <ImageView
+            android:id="@+id/halloween_1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/halloween" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upload_work_part2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/image_3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/pumpkins"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/mask_202821"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/mask" />
+    </LinearLayout>
+</LinearLayout>
