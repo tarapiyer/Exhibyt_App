@@ -37,7 +37,7 @@ public class Tab2Fragment extends Fragment {
         onlyPumpkim.add("pumpkins");
 
 
-        Qarray.add(new Question("What is the best part of this picture?", onlyPumpkim));
+        Qarray.add(new Question("Which speaks to your inner goblin more?", onlyPumpkim));
         Qarray.add(new Question("What is the best part of this picture?", onlyPlane));
         Qarray.add(new Question("What is the worst part of this picture?"));
         Qarray.add(new Question("What is scary?", multiple));
