@@ -24,30 +24,43 @@ public class Tab2Fragment extends Fragment {
 
 
         ArrayList<Question> Qarray = new ArrayList<>();
-        Question q = new Question("What is the best part of this picture?");
-        Qarray.add(new Question("What is the best part of this picture?"));
+
+
+        ArrayList<String> onlyPlane = new ArrayList<>();
+        onlyPlane.add("plane");
+
+        ArrayList<String> multiple = new ArrayList<>();
+        multiple.add("mask");
+        multiple.add("mask");
+
+        ArrayList<String> onlyPumpkim = new ArrayList<>();
+        onlyPumpkim.add("pumpkins");
+
+
+        Qarray.add(new Question("What is the best part of this picture?", onlyPumpkim));
+        Qarray.add(new Question("What is the best part of this picture?", onlyPlane));
+        Qarray.add(new Question("What is the worst part of this picture?"));
+        Qarray.add(new Question("What is scary?", multiple));
+        Qarray.add(new Question("What do you like about this picture?"));
+        Qarray.add(new Question("Moo"));
+        Qarray.add(new Question("What is the best part of this picture?", onlyPlane));
         Qarray.add(new Question("What is the worst part of this picture?"));
         Qarray.add(new Question("What is scary?"));
         Qarray.add(new Question("What do you like about this picture?"));
         Qarray.add(new Question("Moo"));
-        Qarray.add(new Question("What is the best part of this picture?"));
+        Qarray.add(new Question("What is the best part of this picture?", multiple));
         Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?"));
+        Qarray.add(new Question("What is scary?", onlyPlane));
         Qarray.add(new Question("What do you like about this picture?"));
         Qarray.add(new Question("Moo"));
         Qarray.add(new Question("What is the best part of this picture?"));
-        Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?"));
+        Qarray.add(new Question("What is the worst part of this picture?", multiple));
+        Qarray.add(new Question("What is scary?", onlyPlane));
         Qarray.add(new Question("What do you like about this picture?"));
         Qarray.add(new Question("Moo"));
-        Qarray.add(new Question("What is the best part of this picture?"));
+        Qarray.add(new Question("What is the best part of this picture?", multiple));
         Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?"));
-        Qarray.add(new Question("What do you like about this picture?"));
-        Qarray.add(new Question("Moo"));
-        Qarray.add(new Question("What is the best part of this picture?"));
-        Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?"));
+        Qarray.add(new Question("What is scary?", onlyPlane));
         Qarray.add(new Question("What do you like about this picture?"));
         Qarray.add(new Question("Mooing here"));
 
