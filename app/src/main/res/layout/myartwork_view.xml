@@ -15,11 +15,13 @@
             android:id="@+id/image"
             android:layout_width="150dp"
             android:layout_height="100dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/plane" />
 
         <ImageView
             android:id="@+id/halloween_1"
+            android:layout_marginTop="30dp"
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:background="@drawable/halloween" />
