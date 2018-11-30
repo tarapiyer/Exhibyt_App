@@ -6,18 +6,19 @@ package cs147.exhibyt;
 
 public class Response {
     private String text;
-    private int time;
+    private long time;
     //TODO: The user will have to change
     private String user;
     // TODO: Pictures attached to the comment
 
-    public Response(String commentText, int time, String user) {
+    public Response(String commentText, long time, String user) {
         this.text = commentText;
         this.time = time;
         this.user = user;
     }
 
-    public int getTime() {
+    public long getTime() {
+        long currTime = System.currentTimeMillis();
         return time;
     }
 

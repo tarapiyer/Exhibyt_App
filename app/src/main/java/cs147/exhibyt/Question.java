@@ -26,6 +26,12 @@ public class Question {
         this.imageNames = imageNames;
     }
 
+    public void addNewResponse(String commentText, String userName){
+        long currTime = System.currentTimeMillis();
+        Response newResponse = new Response(commentText, currTime, userName);
+        responses.add(0, newResponse);
+    }
+
     public String getQText(){
         return this.questionText;
     }

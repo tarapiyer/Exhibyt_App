@@ -45,7 +45,7 @@ public class ResponsesAdapter extends ArrayAdapter {
         TextView curr = (TextView) qsView.findViewById(R.id.commentText);
         curr.setText(q.getCommentText());
         curr = (TextView) qsView.findViewById(R.id.commentTime);
-        curr.setText(Integer.toString(q.getTime()) + " days");
+        curr.setText(Long.toString(q.getTime()) + " days");
         curr = (TextView) qsView.findViewById(R.id.userCommenting);
         curr.setText(q.getUsername());
         ImageView currImg = (ImageView) qsView.findViewById(R.id.profilePic);
