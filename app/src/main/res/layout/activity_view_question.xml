@@ -10,17 +10,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/pumpkins.png" />
+            android:id="@+id/pumpkins.png"
+            android:src="@drawable/pumpkins"
+            android:layout_marginLeft="50dp"/>
 
-        <ImageView
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/fall-harvest-labeled.png"/>
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fall-harvest-labeled.png"
+            android:src="@drawable/fall_harvest_labeled"
+            android:layout_marginRight="50dp"/>
     </LinearLayout>
 
     <ListView
