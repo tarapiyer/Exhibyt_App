@@ -63,4 +63,9 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(this, ViewQuestionActivity.class);
         startActivity(myIntent);
     }
+
+    public void goToExplore(View v){
+        Intent myIntent = new Intent(this, ExploreActivity.class);
+        startActivity(myIntent);
+    }
 }
