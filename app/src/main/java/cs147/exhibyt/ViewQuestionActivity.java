@@ -13,7 +13,7 @@ public class ViewQuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_question);
 
-        setTitle("View Question");
+        setTitle("Which of these speaks to your inner goblin more?");
 
         ArrayList<Response> responseArray = new ArrayList<>();
         responseArray.add(new Response("The Gourds of Order is an awesome name but the photo doesn't say \"Boo!\"", 1, "Designer23"));
