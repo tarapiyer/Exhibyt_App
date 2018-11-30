@@ -45,4 +45,6 @@ public class QuestionsAdapter extends ArrayAdapter<Question> {
         curr.setText(q.getQText());
         return qsView;
     }
+
+
 }

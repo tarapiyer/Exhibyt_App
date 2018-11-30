@@ -41,7 +41,7 @@ public class ResponsesAdapter extends ArrayAdapter {
         TextView curr = (TextView) qsView.findViewById(R.id.commentText);
         curr.setText(q.getCommentText());
         curr = (TextView) qsView.findViewById(R.id.commentTime);
-        curr.setText(Integer.toString(q.getTime()));
+        curr.setText(Integer.toString(q.getTime()) + " days");
         curr = (TextView) qsView.findViewById(R.id.userCommenting);
         curr.setText(q.getUsername());
         return qsView;
