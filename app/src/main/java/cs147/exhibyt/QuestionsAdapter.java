@@ -5,10 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import static android.icu.lang.UCharacter.toLowerCase;
 
 /**
  * Created by Christina on 11/27/2018.
@@ -43,6 +47,13 @@ public class QuestionsAdapter extends ArrayAdapter<Question> {
         }
         TextView curr = (TextView) qsView.findViewById(R.id.qText);
         curr.setText(q.getQText());
+        ImageView currImg = (ImageView) qsView.findViewById(R.id.firstPic);
+        ArrayList<String> imageNames = q.getArtworks();
+        if (!imageNames.isEmpty()) {
+            int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/" + toLowerCase(imageNames.get(0))
+                    , null, null);
+            currImg.setImageResource(id);
+        }
         return qsView;
     }
 

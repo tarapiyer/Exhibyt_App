@@ -5,10 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
+
+import static android.icu.lang.UCharacter.toLowerCase;
 
 /**
  * Created by Christina on 11/27/2018.
@@ -19,6 +22,7 @@ public class ResponsesAdapter extends ArrayAdapter {
     int resource;
     String resp;
     Context context;
+
 
     public ResponsesAdapter(Context context, int resource, List<Response> items) {
         super(context, resource, items);
@@ -44,6 +48,10 @@ public class ResponsesAdapter extends ArrayAdapter {
         curr.setText(Integer.toString(q.getTime()) + " days");
         curr = (TextView) qsView.findViewById(R.id.userCommenting);
         curr.setText(q.getUsername());
+        ImageView currImg = (ImageView) qsView.findViewById(R.id.profilePic);
+        int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/" + toLowerCase(q.getUsername())
+                , null, null);
+        currImg.setImageResource(id);
         return qsView;
         //Let's try now
     }
