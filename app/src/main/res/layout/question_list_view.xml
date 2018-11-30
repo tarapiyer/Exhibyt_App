@@ -11,10 +11,4 @@
 
     </ListView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:elevation="8dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
 </RelativeLayout>
