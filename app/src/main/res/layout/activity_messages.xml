@@ -13,6 +13,12 @@
 
     </ListView>
 
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"/>
+
     <android.support.design.widget.FloatingActionButton
         android:layout_width="100dp"
         android:layout_height="60dp"

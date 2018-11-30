@@ -49,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
+    public void goToMessages(View v){
+        Intent myIntent = new Intent(this, MessagesActivity.class);
+        startActivity(myIntent);
+    }
+
     public void goToQuestions(View v){
         Intent myIntent = new Intent(this, MessagesActivity.class);
         startActivity(myIntent);

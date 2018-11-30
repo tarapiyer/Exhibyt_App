@@ -60,6 +60,7 @@ public class MessagesActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messages);
+        setTitle("Messages");
         ListView Qlist = (ListView) findViewById(R.id.listofQs);
         QuestionsAdapter adapter = new QuestionsAdapter(
                 this,
