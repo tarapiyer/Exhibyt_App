@@ -44,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
     }
 
+    public void goToHome(View v){
+        Intent myIntent = new Intent(this, MainActivity.class);
+        startActivity(myIntent);
+    }
+
     public void goToQuestions(View v){
         Intent myIntent = new Intent(this, MessagesActivity.class);
         startActivity(myIntent);
