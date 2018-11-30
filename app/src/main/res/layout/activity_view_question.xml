@@ -24,17 +24,18 @@
         android:layout_marginTop="25dp">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/pumpkins.png"
-            android:src="@drawable/pumpkins"
-            android:layout_marginLeft="50dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/gourds_of_order" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
