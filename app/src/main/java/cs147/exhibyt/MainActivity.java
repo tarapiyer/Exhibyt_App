@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToExplore(View v){
-        Intent myIntent = new Intent(this, ExploreActivity.class);
+        Intent myIntent = new Intent(this, GiveFeedback.class);
         startActivity(myIntent);
     }
 }

@@ -25,7 +25,9 @@
         <activity android:name=".ExploreActivity" />
         <activity android:name=".ExploreOnePhotoActivity" />
         <activity android:name=".ContactPageActivity" />
-        <activity android:name=".MessagesActivity"></activity>
+        <activity android:name=".GiveFeedback" />
+        <activity android:name=".MessagesActivity" />
+
     </application>
 
 </manifest>

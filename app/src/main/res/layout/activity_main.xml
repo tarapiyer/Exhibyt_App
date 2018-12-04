@@ -47,6 +47,14 @@
 
     </LinearLayout>
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Feedback"
+        android:onClick="goToExplore"/>
+
+
     <include
         layout="@layout/activity_navigation_bar"
         tools:layout_editor_absoluteX="0dp"
