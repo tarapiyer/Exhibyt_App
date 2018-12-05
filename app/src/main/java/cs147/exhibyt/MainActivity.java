@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         DataSingleton ds = DataSingleton.getInstance();
 
-        ArrayList<Question> Qarray = new ArrayList<>();
+        ArrayList<Question> Qarray = ds.getQuestionList();//new ArrayList<>();
 
 
-        ArrayList<String> onlyPlane = new ArrayList<>();
+        /*ArrayList<String> onlyPlane = new ArrayList<>();
         onlyPlane.add("plane");
 
         ArrayList<String> multiple = new ArrayList<>();
@@ -69,11 +69,9 @@ public class MainActivity extends AppCompatActivity {
         Qarray.add(new Question("Which speaks to your inner goblin more?", onlyPumpkim, responseArray));
         Qarray.add(new Question("What is the best part of this picture?", onlyPlane, responseArr));
         Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?", multiple, responseArr));
+        Qarray.add(new Question("What is scary?", multiple, responseArr));*/
 
         ds.setQuestionList(Qarray);
-
-        Qarray = new ArrayList<Question>();
 
         if (Qarray.size() == 0) {
             System.out.println("It's not working :(");
