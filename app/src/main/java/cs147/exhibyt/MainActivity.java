@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //View currView = inflater.inflate(R.layout.fragment_2, container, false);
 
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         DataSingleton ds = DataSingleton.getInstance();
 
@@ -74,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
         ds.setQuestionList(Qarray);
 
         if (Qarray.size() == 0) {
-            System.out.println("It's not working :(");
             RelativeLayout background = (RelativeLayout) findViewById(R.id.critiqueBackgrd);
             int id = getResources().getIdentifier("cs147.exhibyt:drawable/frame"
                     , null, null);
