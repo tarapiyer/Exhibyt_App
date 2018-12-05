@@ -8,6 +8,36 @@
     tools:context="cs147.exhibyt.MainActivity"
     android:id="@+id/critiqueBackgrd">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/myTitle"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Critique Space"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity ="center"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@fonts/sarala_bold"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            />
+        <TextView
+            android:text="0 questions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity ="center"
+            android:fontFamily="@fonts/sarala_regular"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/numQs"
+            />
+    </LinearLayout>
+
+
     <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -61,7 +91,7 @@
     <include
         layout="@layout/question_list_view"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp"></include>
+        tools:layout_editor_absoluteY="91dp"></include>
 
     <include
         layout="@layout/activity_navigation_bar"
