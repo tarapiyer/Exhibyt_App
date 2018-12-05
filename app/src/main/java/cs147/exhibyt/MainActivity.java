@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         Qarray = new ArrayList<Question>();
 
         if (Qarray.size() == 0) {
+            System.out.println("It's not working :(");
             RelativeLayout background = (RelativeLayout) findViewById(R.id.critiqueBackgrd);
             int id = getResources().getIdentifier("cs147.exhibyt:drawable/frame"
                     , null, null);

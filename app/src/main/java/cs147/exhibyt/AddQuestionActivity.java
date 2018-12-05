@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -36,15 +37,25 @@ public class AddQuestionActivity extends AppCompatActivity {
         ImageView curr = (ImageView) findViewById(R.id.planeImage);
         if (curr.getAlpha() == 1) imgs.add("plane");
 
-        //See if
-        curr = (ImageView) findViewById(R.id.planeImage);
-        if (curr.getAlpha() == 1) imgs.add("plane");
-        curr = (ImageView) findViewById(R.id.planeImage);
-        if (curr.getAlpha() == 1) imgs.add("plane");
-        curr = (ImageView) findViewById(R.id.planeImage);
-        if (curr.getAlpha() == 1) imgs.add("plane");
+        //See if halloween image selected
+        curr = (ImageView) findViewById(R.id.halloweenImage);
+        if (curr.getAlpha() == 1) imgs.add("halloween");
 
-        Question newQ = new Question();
+        //See if mask image selected
+        curr = (ImageView) findViewById(R.id.maskImage);
+        if (curr.getAlpha() == 1) imgs.add("mask");
+
+        //See if pumpkins image selected
+        curr = (ImageView) findViewById(R.id.pumpkinImage);
+        if (curr.getAlpha() == 1) imgs.add("pumpkins");
+
+        TextView qTextView = findViewById(R.id.plain_text_input);
+        String qText = qTextView.getText().toString();
+        Question newQ = new Question(qText, imgs);
+
+        qList.add(newQ);
+        System.out.println("Tried adding a question!");
+        ds.setQuestionList(qList);
 
         Intent myIntent = new Intent(this, MainActivity.class);
         startActivity(myIntent);
