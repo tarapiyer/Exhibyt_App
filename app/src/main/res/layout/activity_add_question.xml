@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:padding="10dp"
         android:textSize="20dp"
-        android:hint="Do you like my use of color?"
+        android:hint="Example: Do you like my use of color?"
         android:inputType="text"/>
     <TextView
         android:layout_width="match_parent"
