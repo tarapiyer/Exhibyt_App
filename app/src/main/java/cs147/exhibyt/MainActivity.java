@@ -77,9 +77,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (Qarray.size() == 0) {
             RelativeLayout background = (RelativeLayout) findViewById(R.id.critiqueBackgrd);
-            int id = getResources().getIdentifier("cs147.exhibyt:drawable/frame"
+            setContentView(R.layout.main_noquestions_view);
+            /*int id = getResources().getIdentifier("cs147.exhibyt:drawable/frame"
                     , null, null);
-            background.setBackgroundResource(id);
+            background.setBackgroundResource(id);*/
         } else {
             ListView Qlist = (ListView) findViewById(R.id.listofQs);
             QuestionsAdapter adapter = new QuestionsAdapter(
