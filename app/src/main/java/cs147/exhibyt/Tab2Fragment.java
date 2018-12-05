@@ -14,9 +14,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
+
+import static android.icu.lang.UCharacter.toLowerCase;
 
 public class Tab2Fragment extends Fragment {
     @Override
@@ -55,51 +59,35 @@ public class Tab2Fragment extends Fragment {
         Qarray.add(new Question("What is the best part of this picture?", onlyPlane, responseArr));
         Qarray.add(new Question("What is the worst part of this picture?"));
         Qarray.add(new Question("What is scary?", multiple, responseArr));
-        Qarray.add(new Question("What do you like about this picture?"));
-        Qarray.add(new Question("Moo"));
-        Qarray.add(new Question("What is the best part of this picture?", onlyPlane));
-        Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?"));
-        Qarray.add(new Question("What do you like about this picture?"));
-        Qarray.add(new Question("Moo"));
-        Qarray.add(new Question("What is the best part of this picture?", multiple));
-        Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?", onlyPlane));
-        Qarray.add(new Question("What do you like about this picture?"));
-        Qarray.add(new Question("Moo"));
-        Qarray.add(new Question("What is the best part of this picture?"));
-        Qarray.add(new Question("What is the worst part of this picture?", multiple));
-        Qarray.add(new Question("What is scary?", onlyPlane));
-        Qarray.add(new Question("What do you like about this picture?"));
-        Qarray.add(new Question("Moo"));
-        Qarray.add(new Question("What is the best part of this picture?", multiple));
-        Qarray.add(new Question("What is the worst part of this picture?"));
-        Qarray.add(new Question("What is scary?", onlyPlane));
-        Qarray.add(new Question("What do you like about this picture?"));
-        Qarray.add(new Question("Mooing here"));
 
         ds.setQuestionList(Qarray);
 
-        ListView Qlist = (ListView) currView.findViewById(R.id.listofQs);
-        QuestionsAdapter adapter = new QuestionsAdapter(
-                getActivity(),
-                R.layout.question_view,
-                Qarray);
-        Qlist.setAdapter(adapter);
+        if (Qarray.size() == 0) {
+            RelativeLayout background = (RelativeLayout) currView.findViewById(R.id.critiqueBackgrd);
+            int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/frame"
+                    , null, null);
+            background.setBackgroundResource(id);
+        } else {
+            ListView Qlist = (ListView) currView.findViewById(R.id.listofQs);
+            QuestionsAdapter adapter = new QuestionsAdapter(
+                    getActivity(),
+                    R.layout.question_view,
+                    Qarray);
+            Qlist.setAdapter(adapter);
 
-        Qlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            Qlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // When clicked perform some action...
-                Intent myIntent = new Intent(getContext(), ViewQuestionActivity.class);
-                DataSingleton ds = DataSingleton.getInstance();
-                ArrayList<Question> currList = ds.getQuestionList();
-                Question curr = currList.get(position);
-                myIntent.putExtra("QUESTION_ID", curr.getId());
-                startActivity(myIntent);
-            }
-        });
-
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    // When clicked perform some action...
+                    Intent myIntent = new Intent(getContext(), ViewQuestionActivity.class);
+                    DataSingleton ds = DataSingleton.getInstance();
+                    ArrayList<Question> currList = ds.getQuestionList();
+                    Question curr = currList.get(position);
+                    myIntent.putExtra("QUESTION_ID", curr.getId());
+                    startActivity(myIntent);
+                }
+            });
+        }
         return currView;
     }
 }
