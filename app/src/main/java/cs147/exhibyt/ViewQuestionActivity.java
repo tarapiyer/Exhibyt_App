@@ -1,6 +1,5 @@
 package cs147.exhibyt;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -9,6 +8,8 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ViewQuestionActivity extends AppCompatActivity {
 

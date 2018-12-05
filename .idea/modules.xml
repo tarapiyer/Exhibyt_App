@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\Christina\AndroidStudioProjects\Exhibyt_App\Exhibyt App.iml" filepath="C:\Users\Christina\AndroidStudioProjects\Exhibyt_App\Exhibyt App.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exhibyt_App.iml" filepath="$PROJECT_DIR$/Exhibyt_App.iml" />
-      <module fileurl="file://C:\Users\Tara\Documents\CS147\Exhibyt App\Exhibyt_App.iml" filepath="C:\Users\Tara\Documents\CS147\Exhibyt App\Exhibyt_App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
