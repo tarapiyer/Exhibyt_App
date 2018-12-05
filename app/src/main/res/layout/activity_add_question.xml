@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question*:" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/showQuestionErrors"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/plain_text_input"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:padding="10dp"
         android:textSize="20dp"
-        android:hint="Do you like my use of color?"
+        android:hint="Example: Do you like my use of color?"
         android:inputType="text"/>
     <TextView
         android:layout_width="match_parent"
