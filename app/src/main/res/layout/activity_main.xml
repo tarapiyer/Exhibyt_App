@@ -6,7 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cs147.exhibyt.MainActivity"
+
     android:id="@+id/critiqueBackgrd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -88,10 +96,20 @@
 
 
 
-    <include
-        layout="@layout/question_list_view"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="91dp"></include>
+    <!--<include-->
+        <!--layout="@layout/question_list_view"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="91dp"></include>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/containerMain"
+        android:layout_weight="1"
+        android:layout_alignBottom="@+id/bottomNavigation"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="0dp"></FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
@@ -102,6 +120,8 @@
         app:menu="@menu/bottom_navigation_menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </LinearLayout>
 
 
 

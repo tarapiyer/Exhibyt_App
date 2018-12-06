@@ -2,9 +2,12 @@ package cs147.exhibyt;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
 
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -13,7 +16,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -25,8 +30,8 @@ import java.util.ArrayList;
  * need to update this to implement login.
  */
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+    BottomNavigationView bottomNavigationView;
     private TabAdapter adapter;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -43,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
         DataSingleton ds = DataSingleton.getInstance();
 
         ArrayList<Question> Qarray = ds.getQuestionList();//new ArrayList<>();
+
+        bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.homeMNav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+
+
 
 
 
@@ -144,8 +155,36 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
+    public void goToAddQsNew(View v){
+        Intent myIntent = new Intent(this, AddQuestionActivity.class);
+        startActivity(myIntent);
+    }
+
     public void goToExplore(View v){
         Intent myIntent = new Intent(this, GiveFeedback.class);
         startActivity(myIntent);
+    }
+
+    explore_feed explore_feedFragment = new explore_feed();
+    home homeFragment = new home();
+    allmessages allmessages = new allmessages();
+
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.messagesMNav:
+                getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, allmessages).commit();
+            case  R.id.homeMNav:
+                getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, homeFragment).commit();
+                return true;
+            case R.id.exploreMNav:
+                getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, explore_feedFragment).commit();
+                return true;
+        }
+
+
+        return false;
     }
 }
