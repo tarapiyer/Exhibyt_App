@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setSelectedItemId(R.id.homeMNav);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, homeFragment).commit();
 
 
 
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Qarray.add(new Question("What is the worst part of this picture?"));
         Qarray.add(new Question("What is scary?", multiple, responseArr));*/
 
-        ds.setQuestionList(Qarray);
+        /*ds.setQuestionList(Qarray);
 
         TextView numQs = (TextView) findViewById(R.id.numQs);
         numQs.setText(Integer.toString(Qarray.size()) + " Questions");
