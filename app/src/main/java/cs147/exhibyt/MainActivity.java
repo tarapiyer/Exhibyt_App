@@ -146,10 +146,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         startActivity(myIntent);
     }
 
-    public void goToAddQs(View v){
-        Intent myIntent = new Intent(this, AddQuestionActivity.class);
-        startActivity(myIntent);
-    }
 
     public void goToViewQ(View v){
         Intent myIntent = new Intent(this, ViewQuestionActivity.class);

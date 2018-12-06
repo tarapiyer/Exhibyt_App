@@ -9,11 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -221,8 +224,21 @@ adapter.addFragment(new Tab1Fragment(), "Artwork");
 viewPager.setAdapter(adapter);
 tabLayout.setupWithViewPager(viewPager);*/
 
-
+        FloatingActionButton b = (FloatingActionButton) currView.findViewById(R.id.floating_action_button);
+        b.setOnClickListener(mButtonClickListener);
         return currView;
     }
+
+    private View.OnClickListener mButtonClickListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            goToAddQs(v);
+        }
+    };
+
+    public void goToAddQs(View v){
+        Intent myIntent = new Intent(getActivity(), AddQuestionActivity.class);
+        startActivity(myIntent);
+    }
+
 
 }
