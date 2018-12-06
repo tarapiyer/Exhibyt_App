@@ -8,9 +8,11 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -34,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.id.myTitle);
+
+
         DataSingleton ds = DataSingleton.getInstance();
 
         ArrayList<Question> Qarray = ds.getQuestionList();//new ArrayList<>();
@@ -69,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         Qarray.add(new Question("What is scary?", multiple, responseArr));*/
 
         ds.setQuestionList(Qarray);
+
+        TextView numQs = (TextView) findViewById(R.id.numQs);
+        numQs.setText(Integer.toString(Qarray.size()) + " Questions");
 
         if (Qarray.size() == 0) {
             System.out.println("It's not working :(");

@@ -6,21 +6,55 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/myTitle"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Request feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity ="center"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@fonts/sarala_bold"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question*:"
+        android:fontFamily="@fonts/sarala_bold"
+        android:textSize="24sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/showQuestionErrors"
+        android:fontFamily="@fonts/sarala_regular"
+        android:textSize="16sp"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/plain_text_input"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:padding="10dp"
-        android:textSize="20dp"
-        android:hint="Do you like my use of color?"
+        android:textSize="14sp"
+        android:fontFamily="@fonts/sarala_regular"
+        android:hint="Example: Do you like my use of color?"
         android:inputType="text"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose Pictures"
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"/>
+        android:text="Include artwork to give context"
+        android:fontFamily="@fonts/sarala_bold"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
     <LinearLayout
         android:id="@+id/upload_work_part1"
         android:layout_width="fill_parent"
