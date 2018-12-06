@@ -177,6 +177,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (item.getItemId()){
             case R.id.messagesMNav:
                 getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, allmessages).commit();
+                return true;
             case  R.id.homeMNav:
                 getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, homeFragment).commit();
                 return true;
