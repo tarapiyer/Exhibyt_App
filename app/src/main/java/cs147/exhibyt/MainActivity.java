@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Question> Qarray = ds.getQuestionList();//new ArrayList<>();
 
 
+
         /*ArrayList<String> onlyPlane = new ArrayList<>();
         onlyPlane.add("plane");
 

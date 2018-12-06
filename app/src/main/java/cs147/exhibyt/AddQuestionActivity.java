@@ -28,6 +28,8 @@ public class AddQuestionActivity extends AppCompatActivity {
         }
     }
 
+
+
     // Here, we're submitting the app
     public void goToQuestionsN(View v) {
         DataSingleton ds = DataSingleton.getInstance();
