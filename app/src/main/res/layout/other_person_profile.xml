@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/myTitle"
+        android:padding="18dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/popcorn"/>
+
+        <TextView
+            android:text="LandayLady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity ="center"
+            android:layout_weight="1"
+            android:fontFamily="@fonts/sarala_bold"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <ImageButton
+            android:id="@+id/material_icon_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_black_24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="About Me"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRigth="20dp"
+            android:text="I’m Wilde. Artist by day. Critique by night.
+Reach out about collabs. I don’t bite. Usually"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
