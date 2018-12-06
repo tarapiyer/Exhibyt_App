@@ -46,7 +46,7 @@
                         android:layout_gravity="bottom"
                         android:fontFamily="@fonts/sarala_bold"
                         android:textStyle="bold"
-                        android:textSize="20dp"
+                        android:textSize="10dp"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
                         android:paddingLeft="10dp"
