@@ -12,7 +12,6 @@
         android:fillViewport="false">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,21 +38,32 @@
                         android:scaleType="centerCrop"
                         android:background="@color/colorWhite"/>
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Rainbow Stallion"
-                        android:layout_gravity="bottom"
-                        android:fontFamily="@fonts/sarala_bold"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="10dp"
-                        android:background="@color/colorWhite"
-                        android:textColor="@color/colorPrimaryDark"/>
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rainbow Stallion"
+                            android:gravity="left"
+                            android:fontFamily="@fonts/sarala_bold"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="@color/colorWhite"
+                            android:textColor="@color/colorPrimaryDark"/>
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/speech_bubble"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -68,11 +78,47 @@
                 android:layout_marginRight="@dimen/mtrl_card_spacing"
                 android:minHeight="200dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    android:layout_gravity="center"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/twohorses"
+                        android:scaleType="centerCrop"
+                        android:background="@color/colorWhite"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rainbow Stallion"
+                            android:gravity="left"
+                            android:fontFamily="@fonts/sarala_bold"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="@color/colorWhite"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/speech_bubble"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -84,10 +130,47 @@
                 android:layout_marginRight="@dimen/mtrl_card_spacing"
                 android:minHeight="200dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop" />
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/twohorses"
+                        android:scaleType="centerCrop"
+                        android:background="@color/colorWhite"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rainbow Stallion"
+                            android:gravity="left"
+                            android:fontFamily="@fonts/sarala_bold"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="@color/colorWhite"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/speech_bubble"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -99,11 +182,47 @@
                 android:layout_marginRight="@dimen/mtrl_card_spacing"
                 android:minHeight="200dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:layout_gravity="center"/>
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/twohorses"
+                        android:scaleType="centerCrop"
+                        android:background="@color/colorWhite"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rainbow Stallion"
+                            android:gravity="left"
+                            android:fontFamily="@fonts/sarala_bold"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="@color/colorWhite"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/speech_bubble"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -115,11 +234,47 @@
                 android:layout_marginRight="@dimen/mtrl_card_spacing"
                 android:minHeight="200dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:layout_gravity="center"/>
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/twohorses"
+                        android:scaleType="centerCrop"
+                        android:background="@color/colorWhite"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rainbow Stallion"
+                            android:gravity="left"
+                            android:fontFamily="@fonts/sarala_bold"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="@color/colorWhite"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/speech_bubble"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
