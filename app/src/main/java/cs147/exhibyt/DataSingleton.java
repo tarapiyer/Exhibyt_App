@@ -18,7 +18,7 @@ class DataSingleton {
     }
 
     private DataSingleton() {
-        questionList = new ArrayList<>();
+        questionList = new ArrayList<Question>();
     }
 
     public ArrayList<Question> getQuestionList() {

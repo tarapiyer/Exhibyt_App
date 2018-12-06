@@ -9,6 +9,11 @@ import java.util.Date;
 
 public class Question {
     private String questionText;
+
+    public void setResponses(ArrayList<Response> responses) {
+        this.responses = responses;
+    }
+
     private ArrayList<Response> responses;
     private ArrayList<String> imageNames;
 
