@@ -20,7 +20,7 @@
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.MaterialComponents.CardView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/mtrl_card_spacing"
                 android:layout_marginTop="@dimen/mtrl_card_spacing"
                 android:layout_marginRight="@dimen/mtrl_card_spacing"
@@ -32,11 +32,12 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="370dp"
+                        android:id="@+id/exploreImage1"
+                        android:layout_height="200dp"
                         android:background="@color/colorWhite"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/twohorses" />
+                        android:src="@drawable/fernssss" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -44,8 +45,9 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:background="@color/colorWhite"
                             android:fontFamily="@fonts/sarala_bold"
                             android:gravity="left"
@@ -58,9 +60,10 @@
                             android:textStyle="bold" />
 
                         <ImageButton
-                            android:id="@+id/material_icon_button"
+                            android:id="@+id/material_icon_button1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="goToQ0"
                             android:src="@drawable/ic_android_black_24dp"
                             android:background="?attr/selectableItemBackgroundBorderless"/>
 
@@ -85,11 +88,12 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/exploreImage2"
                         android:background="@color/colorWhite"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/twohorses" />
+                        android:src="@drawable/fractal_kitty" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -97,8 +101,9 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:background="@color/colorWhite"
                             android:fontFamily="@fonts/sarala_bold"
                             android:gravity="left"
@@ -111,9 +116,10 @@
                             android:textStyle="bold" />
 
                         <ImageButton
-                            android:id="@id/material_icon_button"
+                            android:id="@+id/material_icon_button2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="goToQ1"
                             android:src="@drawable/ic_android_black_24dp"
                             android:background="?attr/selectableItemBackgroundBorderless"/>
 
@@ -137,9 +143,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/twohorses"
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/exploreImage3"
+                        android:src="@drawable/gushers"
                         android:scaleType="centerCrop"
                         android:background="@color/colorWhite"/>
 
@@ -163,9 +170,10 @@
                             android:textColor="@color/colorPrimaryDark"/>
 
                         <ImageButton
-                            android:id="@id/material_icon_button"
+                            android:id="@+id/material_icon_button3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="goToQ2"
                             android:src="@drawable/ic_android_black_24dp"
                             android:background="?attr/selectableItemBackgroundBorderless"/>
 
@@ -190,9 +198,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/twohorses"
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/exploreImage4"
+                        android:src="@drawable/handprints"
                         android:scaleType="centerCrop"
                         android:background="@color/colorWhite"/>
 
@@ -216,9 +225,10 @@
                             android:textColor="@color/colorPrimaryDark"/>
 
                         <ImageButton
-                            android:id="@id/material_icon_button"
+                            android:id="@+id/material_icon_button4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="goToQ3"
                             android:src="@drawable/ic_android_black_24dp"
                             android:background="?attr/selectableItemBackgroundBorderless"/>
 
@@ -243,11 +253,12 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/exploreImage5"
                         android:background="@color/colorWhite"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/twohorses" />
+                        android:src="@drawable/blue_beauty" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -255,8 +266,9 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:background="@color/colorWhite"
                             android:fontFamily="@fonts/sarala_bold"
                             android:gravity="left"
@@ -269,9 +281,10 @@
                             android:textStyle="bold" />
 
                         <ImageButton
-                            android:id="@id/material_icon_button"
+                            android:id="@+id/material_icon_button5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:onClick="goToQ4"
                             android:src="@drawable/ic_android_black_24dp"
                             android:background="?attr/selectableItemBackgroundBorderless"/>
 

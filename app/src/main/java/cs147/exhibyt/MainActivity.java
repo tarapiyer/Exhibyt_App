@@ -24,6 +24,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 
 
+
 /**
  * MainActivity is the "My Gallery" screen that users see
  * upon first opening the Exhibyt app. In future, we may
@@ -57,38 +58,42 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
         // Here, we are creating the questions that appear on the explore page:
+        //Must be inside here so doesn't recreate when going back to this activity
         if (ds.getOtherUsersQuestions().size() == 0) {
             ArrayList<Question> exploreQuestions = new ArrayList<Question>();
 
             //Q0
             ArrayList<String> twoHorsesImage = new ArrayList<>();
-            twoHorsesImage.add("twohorses.png");
+            twoHorsesImage.add("fernssss");
+            twoHorsesImage.add("rainbow_blast");
             ArrayList<Response> emptyResponses = new ArrayList<>();
-            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage, emptyResponses, "Designer23"));
+            exploreQuestions.add(new Question("Which picture uses color better?", twoHorsesImage, emptyResponses, "Designer23"));
 
             //Q1
             ArrayList<String> twoHorsesImage2 = new ArrayList<>();
-            twoHorsesImage2.add("twohorses.png");
+            twoHorsesImage2.add("fractal_kitty");
+            twoHorsesImage2.add("pig_sloth");
             ArrayList<Response> emptyResponses2 = new ArrayList<>();
-            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage2, emptyResponses2, "Designer23"));
+            exploreQuestions.add(new Question("Which animal speaks to you more?", twoHorsesImage2, emptyResponses2, "Susy13"));
 
             //Q2
             ArrayList<String> twoHorsesImage3 = new ArrayList<>();
-            twoHorsesImage3.add("twohorses.png");
+            twoHorsesImage3.add("gushers");
             ArrayList<Response> emptyResponses3 = new ArrayList<>();
-            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage3, emptyResponses3, "Designer23"));
+            exploreQuestions.add(new Question("How can I improve on contrast?", twoHorsesImage3, emptyResponses3, "UltimateMaker"));
 
             //Q3
             ArrayList<String> twoHorsesImage4 = new ArrayList<>();
-            twoHorsesImage4.add("twohorses.png");
+            twoHorsesImage4.add("handprints");
+            twoHorsesImage4.add("orange_blossom");
             ArrayList<Response> emptyResponses4 = new ArrayList<>();
-            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage4, emptyResponses4, "Designer23"));
+            exploreQuestions.add(new Question("Which picture seems more professional?", twoHorsesImage4, emptyResponses4, "Designer23"));
 
             //Q4
             ArrayList<String> twoHorsesImage5 = new ArrayList<>();
-            twoHorsesImage5.add("twohorses.png");
+            twoHorsesImage5.add("blue_beauty");
             ArrayList<Response> emptyResponses5 = new ArrayList<>();
-            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage5, emptyResponses5, "Designer23"));
+            exploreQuestions.add(new Question("Do you like the cropping of the butterfly?", twoHorsesImage5, emptyResponses5, "Susy13"));
 
             ds.setOtherUsersQuestions(exploreQuestions);
         }
@@ -192,6 +197,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         startActivity(myIntent);
     }
 
+
+
     public void goToExplore(View v){
         Intent myIntent = new Intent(this, GiveFeedback.class);
         startActivity(myIntent);
@@ -201,6 +208,37 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Intent myIntent = new Intent(this, MessagesActivity.class);
         startActivity(myIntent);
     }
+
+    public void goToQ0(View v){
+        Intent myIntent = new Intent(this, GiveFeedback.class);
+        myIntent.putExtra("id", "0");
+        startActivity(myIntent);
+    }
+
+    public void goToQ1(View v){
+        Intent myIntent = new Intent(this, GiveFeedback.class);
+        myIntent.putExtra("id", "1");
+        startActivity(myIntent);
+    }
+
+    public void goToQ2(View v){
+        Intent myIntent = new Intent(this, GiveFeedback.class);
+        myIntent.putExtra("id", "2");
+        startActivity(myIntent);
+    }
+
+    public void goToQ3(View v){
+        Intent myIntent = new Intent(this, GiveFeedback.class);
+        myIntent.putExtra("id", "3");
+        startActivity(myIntent);
+    }
+
+    public void goToQ4(View v){
+        Intent myIntent = new Intent(this, GiveFeedback.class);
+        myIntent.putExtra("id", "4");
+        startActivity(myIntent);
+    }
+
 
     explore_feed explore_feedFragment = new explore_feed();
     home homeFragment = new home();
@@ -221,6 +259,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, explore_feedFragment).commit();
                 return true;
         }
+
 
         return false;
     }
