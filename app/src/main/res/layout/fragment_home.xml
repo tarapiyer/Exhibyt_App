@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_android_black_24dp"
+        android:src="@drawable/ic_plus"
         android:elevation="9dp"/>
 
 </FrameLayout>

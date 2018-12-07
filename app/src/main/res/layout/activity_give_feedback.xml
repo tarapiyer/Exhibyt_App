@@ -38,134 +38,134 @@
         android:layout_marginRight="10dp"
         />
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="10dp"
-    android:fillViewport="false">
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Widget.MaterialComponents.CardView"
-            android:id="@+id/giveCard1"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/mtrl_card_spacing"
-            android:layout_marginTop="@dimen/mtrl_card_spacing"
-            android:layout_marginRight="@dimen/mtrl_card_spacing"
-            android:minHeight="200dp">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/giveCard1"
+                style="@style/Widget.MaterialComponents.CardView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="370dp"
-                    android:id="@+id/giveImage1"
-                    android:layout_height="200dp"
-                    android:background="@color/colorWhite"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/fernssss" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="200dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                    <ImageView
+                        android:id="@+id/giveImage1"
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
                         android:background="@color/colorWhite"
-                        android:fontFamily="@fonts/sarala_bold"
-                        android:gravity="left"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Fernssss"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:id="@+id/caption1"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fernssss" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/caption1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="@fonts/sarala_bold"
+                            android:gravity="left"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Fernssss"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Widget.MaterialComponents.CardView"
-            android:id="@+id/giveCard2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/mtrl_card_spacing"
-            android:layout_marginTop="@dimen/mtrl_card_spacing"
-            android:layout_marginRight="@dimen/mtrl_card_spacing"
-            android:minHeight="200dp">
-
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/giveCard2"
+                style="@style/Widget.MaterialComponents.CardView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="370dp"
-                    android:layout_height="200dp"
-                    android:id="@+id/giveImage2"
-                    android:background="@color/colorWhite"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/fractal_kitty" />
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="200dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                    <ImageView
+                        android:id="@+id/giveImage2"
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
                         android:background="@color/colorWhite"
-                        android:fontFamily="@fonts/sarala_bold"
-                        android:gravity="left"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Fractal Kitty"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:id="@+id/caption2"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fractal_kitty" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/caption2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="@fonts/sarala_bold"
+                            android:gravity="left"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Fractal Kitty"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:id="@+id/textComment"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="submitFeedback"
+                android:text="Submit" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:onClick="submitFeedback"/>
-
-    </LinearLayout>
-
+        </LinearLayout>
 
 
-</ScrollView>
+    </ScrollView>
 
 
 
