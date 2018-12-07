@@ -81,7 +81,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
         if (Qarray.size() == 0) {
             System.out.println("It's not working  ");
             FrameLayout background = (FrameLayout) currView.findViewById(R.id.critiqueBackgrd);
-            int id = getResources().getIdentifier("cs147.exhibyt:drawable/frame4"
+            int id = getResources().getIdentifier("cs147.exhibyt:drawable/frame3"
                     , null, null);
             background.setBackgroundResource(id);
         } else {
