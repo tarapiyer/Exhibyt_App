@@ -19,6 +19,7 @@ class DataSingleton {
 
     private DataSingleton() {
         questionList = new ArrayList<Question>();
+        otherUsersQuestions = new ArrayList<Question>();
         messages = new ArrayList<Message>();
     }
 
@@ -30,7 +31,19 @@ class DataSingleton {
         this.questionList = questionList;
     }
 
+    public ArrayList<Question> getOtherUsersQuestions() {
+        return otherUsersQuestions;
+    }
+
+    public void setOtherUsersQuestions(ArrayList<Question> otherUsersQuestions) {
+        this.otherUsersQuestions = otherUsersQuestions;
+    }
+
+
+
     private ArrayList<Question> questionList;
+
+    private ArrayList<Question> otherUsersQuestions;
 
     public ArrayList<Message> getMessages() {
         return messages;
@@ -41,6 +54,7 @@ class DataSingleton {
     }
 
     private ArrayList<Message> messages;
+
 
 
 }
