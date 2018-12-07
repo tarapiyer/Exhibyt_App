@@ -124,7 +124,7 @@ Reach out about collabs. I don’t bite. Usually"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Rainbow Stallion"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -175,7 +175,7 @@ Reach out about collabs. I don’t bite. Usually"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Rainbow Stallion"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -225,7 +225,7 @@ Reach out about collabs. I don’t bite. Usually"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Rainbow Stallion"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -275,7 +275,7 @@ Reach out about collabs. I don’t bite. Usually"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Rainbow Stallion"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
