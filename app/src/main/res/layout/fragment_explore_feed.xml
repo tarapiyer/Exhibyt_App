@@ -4,32 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".explore_feed">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:id="@+id/myTitle"
-        android:background="@color/colorAccent"
-        android:orientation="vertical">
-
-        <TextView
-            android:text="Explore"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity ="center"
-            android:layout_marginTop="18dp"
-            android:fontFamily="@fonts/sarala_bold"
-            android:textSize="24sp"
-            android:textColor="@color/colorWhite"
-            />
-
-    </LinearLayout>
-
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -80,8 +54,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:text="Fernssss"
-                            android:textColor="@color/colorAccent"
+                            android:text="Rainbow Stallion"
+                            android:textColor="@color/colorPrimaryDark"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -136,8 +110,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:text="Fractal Kitty"
-                            android:textColor="@color/colorAccent"
+                            android:text="Rainbow Stallion"
+                            android:textColor="@color/colorPrimaryDark"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -182,9 +156,10 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Gushers"
+                            android:layout_weight="1"
+                            android:text="Rainbow Stallion"
                             android:gravity="left"
                             android:fontFamily="@fonts/sarala_bold"
                             android:textStyle="bold"
@@ -193,7 +168,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorAccent"/>
+                            android:textColor="@color/colorPrimaryDark"/>
 
                         <ImageButton
                             android:id="@+id/material_icon_button3"
@@ -237,9 +212,10 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Handprints"
+                            android:layout_weight="1"
+                            android:text="Rainbow Stallion"
                             android:gravity="left"
                             android:fontFamily="@fonts/sarala_bold"
                             android:textStyle="bold"
@@ -248,7 +224,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorAccent"/>
+                            android:textColor="@color/colorPrimaryDark"/>
 
                         <ImageButton
                             android:id="@+id/material_icon_button4"
@@ -301,8 +277,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:text="Blue Beauty"
-                            android:textColor="@color/colorAccent"
+                            android:text="Rainbow Stallion"
+                            android:textColor="@color/colorPrimaryDark"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -323,6 +299,5 @@
         </LinearLayout>
 
     </ScrollView>
-    </LinearLayout>
 
 </FrameLayout>
