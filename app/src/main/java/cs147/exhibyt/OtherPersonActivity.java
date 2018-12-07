@@ -20,8 +20,15 @@ public class OtherPersonActivity extends Activity {
         TextView idText = findViewById(R.id.idText);
         ImageView profilePic = findViewById(R.id.OtherPersonProfilePic);
         DataSingleton ds = DataSingleton.getInstance();
-        int id = Integer.parseInt(getIntent().getStringExtra("QUESTION_ID"));
-        String userName = ds.getOtherUsersQuestions().get(id).getUserName();
+        String userName = "";
+        if (getIntent().getStringExtra("QUESTION_ID") != null) {
+            int id = Integer.parseInt(getIntent().getStringExtra("QUESTION_ID"));
+            userName = ds.getOtherUsersQuestions().get(id).getUserName();
+        } else {
+            userName = getIntent().getStringExtra("RESPONSE_USERNAME");
+        }
+
+
         CardView card1 = findViewById(R.id.otherCard1);
         ImageView img1 = findViewById(R.id.otherImage1);
         TextView text1 = findViewById(R.id.otherText1);
@@ -75,6 +82,17 @@ public class OtherPersonActivity extends Activity {
             text4.setText("Orange Blossom");
 
 
+        } else {
+            about = "This is your profile. You are me.";
+            userName = "Me";
+            profilePic.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" + "me"
+                    , null, null));
+            card1.setVisibility(View.VISIBLE);
+            card2.setVisibility(View.VISIBLE);
+            img1.setImageResource(R.drawable.plane);
+            text1.setText("Plane in Red");
+            img2.setImageResource(R.drawable.mask);
+            text2.setText("New Death");
         }
 
         idText.setText(about);
