@@ -150,16 +150,53 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.textfield.TextInputEditText
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provide Feedback (Required):"
+                android:fontFamily="@fonts/sarala_regular"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/showGiveFeedbackErrors"
+                android:fontFamily="@fonts/sarala_regular"
+                android:textSize="15sp"
+                android:layout_marginLeft="21dp"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/textComment"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="fill_parent"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:fontFamily="@fonts/sarala_regular"
+                android:hint="Example: I really like that...."
+                android:background="#F8F8F8"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:minLines="4"
+                android:maxLines="4"
+                android:gravity="top"/>
+
+            <!--<com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textComment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content" />-->
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:onClick="submitFeedback"
+                android:layout_marginTop="15dp"
                 android:text="Submit" />
 
         </LinearLayout>

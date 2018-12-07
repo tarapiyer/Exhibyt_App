@@ -67,6 +67,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             twoHorsesImage.add("fernssss");
             twoHorsesImage.add("rainbow_blast");
             ArrayList<Response> emptyResponses = new ArrayList<>();
+            emptyResponses.add(new Response("Fernssss. Rainbow Blast colors clash.", 1, "Susy13"));
+            emptyResponses.add(new Response("Fernssss. The sparse use of green highlights the fractals.", 2, "UltimateMarker"));
+
+
             exploreQuestions.add(new Question("Which picture uses color better?", twoHorsesImage, emptyResponses, "Designer23"));
 
             //Q1
@@ -74,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             twoHorsesImage2.add("fractal_kitty");
             twoHorsesImage2.add("pig_sloth");
             ArrayList<Response> emptyResponses2 = new ArrayList<>();
+            emptyResponses2.add(new Response("Pig SLoth! That bubble gum and headphone is so relateable. It also looks so lively", 3, "UltimateMarker"));
             exploreQuestions.add(new Question("Which animal speaks to you more?", twoHorsesImage2, emptyResponses2, "Susy13"));
 
             //Q2
@@ -87,6 +92,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             twoHorsesImage4.add("handprints");
             twoHorsesImage4.add("orange_blossom");
             ArrayList<Response> emptyResponses4 = new ArrayList<>();
+            emptyResponses4.add(new Response("Orange Blossoms. It looks more abstract, which is more indicative of professional artists today.", 1, "Susy13"));
+            emptyResponses4.add(new Response("Orange Blossoms are nice, although it looks more like a fire.", 5, "UltimateMarker"));
             exploreQuestions.add(new Question("Which picture seems more professional?", twoHorsesImage4, emptyResponses4, "Designer23"));
 
             //Q4
