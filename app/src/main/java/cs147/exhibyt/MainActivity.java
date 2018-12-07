@@ -57,10 +57,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
         // Here, we are creating the questions that appear on the explore page:
-
-
-
-
         if (ds.getOtherUsersQuestions().size() == 0) {
             ArrayList<Question> exploreQuestions = new ArrayList<Question>();
 
@@ -225,7 +221,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, explore_feedFragment).commit();
                 return true;
         }
-
 
         return false;
     }

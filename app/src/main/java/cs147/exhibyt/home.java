@@ -201,7 +201,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         getActivity().finish();
                         startActivity(getActivity().getIntent());
                     }
-                }, 3000);
+                }, 8000);
 
             }
 

@@ -53,7 +53,7 @@ public class ViewQuestionActivity extends AppCompatActivity {
         LinearLayout topLinearLayout = (LinearLayout) findViewById(R.id.linearLayoutItem);
         topLinearLayout.setOrientation(LinearLayout.HORIZONTAL);
         for (int i = 0; i < listOfPics.size(); i++) {
-            System.out.println("Let's try!");
+            //System.out.println("Let's try!");
             String q = listOfPics.get(i);
             final ImageView currImg = new ImageView (this);
 
@@ -79,14 +79,6 @@ public class ViewQuestionActivity extends AppCompatActivity {
                 }
             });
         }
-
-
-        /*ArrayList<Response> responseArray = new ArrayList<>();
-        responseArray.add(new Response("The Gourds of Order is an awesome name but the photo doesn't say \"Boo!\"", 1, "Designer23"));
-        responseArray.add(new Response("It's the day of the year in which you get the chance to create freaky art. Go darker!", 2, "Susy13"));
-        responseArray.add(new Response("Healthy, robust, constrasting. I like the pumpkin and think you should go with that. Also the dark bucket really stands out.", 2, "Designer23"));
-        responseArray.add(new Response("There are too many pumpkins and too few goblins.", 3, "UltimateMarker"));
-        responseArray.add(new Response("All the pumpkims are too orange. We need more diversity in colors here.", 4, "Susy13"));*/
 
         ArrayList<Response> responseArray = qDet.getResponses();
 
