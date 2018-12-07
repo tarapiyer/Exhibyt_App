@@ -24,6 +24,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 
 
+
 /**
  * MainActivity is the "My Gallery" screen that users see
  * upon first opening the Exhibyt app. In future, we may
