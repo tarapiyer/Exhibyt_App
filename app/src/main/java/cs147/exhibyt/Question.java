@@ -8,7 +8,18 @@ import java.util.Date;
  */
 
 public class Question {
+
     private String questionText;
+
+    private String userName;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
     public void setResponses(ArrayList<Response> responses) {
         this.responses = responses;
@@ -28,6 +39,8 @@ public class Question {
 
     public Question() {
         this.questionText = "";
+        // username of size 0 is the main user.
+        this.userName = "";
         this.responses = new ArrayList<>();
         this.imageNames = new ArrayList<>();
         Date date = new Date();
@@ -35,6 +48,7 @@ public class Question {
     }
 
     public Question(String questionText) {
+        this.userName = "";
         this.questionText = questionText;
         this.responses = new ArrayList<>();
         this.imageNames = new ArrayList<>();
@@ -43,6 +57,7 @@ public class Question {
     }
 
     public Question(String questionText, ArrayList<String> imageNames) {
+        this.userName = "";
         this.questionText = questionText;
         this.responses = new ArrayList<>();
         this.imageNames = imageNames;
@@ -51,6 +66,16 @@ public class Question {
     }
 
     public Question(String questionText, ArrayList<String> imageNames, ArrayList<Response> responses) {
+        this.userName = "";
+        this.questionText = questionText;
+        this.responses = responses;
+        this.imageNames = imageNames;
+        Date date = new Date();
+        this.id = questionText + Long.toString(date.getTime());
+    }
+
+    public Question(String questionText, ArrayList<String> imageNames, ArrayList<Response> responses, String userName) {
+        this.userName = userName;
         this.questionText = questionText;
         this.responses = responses;
         this.imageNames = imageNames;
