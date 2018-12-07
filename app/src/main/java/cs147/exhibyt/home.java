@@ -127,7 +127,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
             });
 
             if (firstTime) {
-                Toast.makeText(getActivity(), "Imagine that you have added 3 more questions and 3 days have passed. Review your feedback!",
+                Toast.makeText(getActivity(), "Imagine 3 days have passed. You have added more questions and received feedback. Review it!",
                         Toast.LENGTH_LONG).show();
 
                 Handler handler = new Handler();
@@ -189,7 +189,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                                 "with the orange and green really make each other color pop in comparison. On the other hand, the relative monotony of the" +
                                 "size of hte pumpkins makes it a little less interesting.\nHowever, I would say that the lack of focal point is the true area that" +
                                 "could see massive improvement. These piece doesn't really have a focal point, so my eye ends up wandering around to figure out" +
-                                "what exactly I should be focusing on within this piece.", 1, "Designer23"));
+                                "what exactly I should be focusing on within this piece.", 2, "Designer23"));
 
 
                         Qarray.add(0, new Question("How can I make this piece go to the next level?", onlyPumpkim, responseArr));
@@ -199,7 +199,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         getActivity().finish();
                         startActivity(getActivity().getIntent());
                     }
-                }, 8000);
+                }, 3000);
 
             }
 
