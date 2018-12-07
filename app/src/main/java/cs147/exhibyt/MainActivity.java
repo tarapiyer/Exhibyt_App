@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, homeFragment).commit();
 
 
+        // Here, we are creating the questions that appear on the explore page:
+
 
 
         /*ArrayList<String> onlyPlane = new ArrayList<>();
