@@ -78,6 +78,7 @@ public class Question {
         this.userName = userName;
         this.questionText = questionText;
         this.responses = responses;
+
         this.imageNames = imageNames;
         Date date = new Date();
         this.id = questionText + Long.toString(date.getTime());
