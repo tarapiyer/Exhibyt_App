@@ -79,7 +79,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Fernssss"
-                            android:textColor="#808080"
+                            android:textColor="@color/colorAccent"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:onClick="goToQ0"/>
@@ -138,7 +138,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Fractal Kitty"
-                            android:textColor="#808080"
+                            android:textColor="@color/colorAccent"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:onClick="goToQ1"/>
@@ -198,7 +198,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="#808080"
+                            android:textColor="@color/colorAccent"
                             android:onClick="goToQ2"/>
 
                         <ImageView
@@ -257,7 +257,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="#808080"
+                            android:textColor="@color/colorAccent"
                             android:onClick="goToQ3"/>
 
                         <ImageView
@@ -314,7 +314,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Blue Beauty"
-                            android:textColor="#808080"
+                            android:textColor="@color/colorAccent"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:onClick="goToQ4"/>
