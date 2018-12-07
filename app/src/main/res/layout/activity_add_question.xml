@@ -46,12 +46,19 @@
         android:id="@+id/plain_text_input"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_width="320dp"
-        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
         android:textSize="14sp"
+        android:padding="10dp"
         android:fontFamily="@fonts/sarala_regular"
         android:hint="Example: Do you like my use of color?"
-        android:inputType="text"/>
+        android:background="#F8F8F8"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:minLines="4"
+        android:maxLines="4"
+        android:gravity="top"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,7 +72,6 @@
         android:id="@+id/upload_work_part1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#F8F8F8"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -93,7 +99,6 @@
         android:id="@+id/upload_work_part2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#F8F8F8"
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
