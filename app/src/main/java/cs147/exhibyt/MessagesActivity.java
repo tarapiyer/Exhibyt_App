@@ -25,7 +25,7 @@ public class MessagesActivity extends AppCompatActivity {
 
 
 
-        ArrayList<Message> Qarray = new ArrayList<>();
+        /*ArrayList<Message> Qarray = new ArrayList<>();
         Qarray.add(new Message("Hi! Are you interested in joining my exhibition on the 24th at Santa Monica?", true));
         Qarray.add(new Message("Hi! Are you interested in joining my exhibition on the 24th at Santa Monica?", false));
 
@@ -36,7 +36,7 @@ public class MessagesActivity extends AppCompatActivity {
             View date = new View(this);
             //date.setLayou
 
-        }
+        }*/
 
 
         /*

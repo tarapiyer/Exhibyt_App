@@ -8,11 +8,13 @@
     tools:context="cs147.exhibyt.MessagesActivity">
 
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/listOfMessages"></LinearLayout>
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:fontFamily="@fonts/sarala_regular"
+        android:textSize="25sp"
+        android:text="Thank you for coming to the\nIndividual Messages screen!\nWe haven't implemented this page yet."/>
     <!--<LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,22 +107,6 @@
             android:textColor="@color/colorPrimaryDark"></TextView>
 
     </LinearLayout>-->
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <EditText
-            android:id="@+id/plain_text_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:inputType="text"
-            android:hint="Write Response Here"/>
-
-    </RelativeLayout>
-
 
 
 </LinearLayout>

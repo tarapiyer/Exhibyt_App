@@ -51,8 +51,11 @@ public class allmessages extends Fragment {
 
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // When clicked perform some action...
-                Toast.makeText(getActivity(), "Pending contact request",
-                        Toast.LENGTH_LONG).show();
+                /*Toast.makeText(getActivity(), "Pending contact request",
+                        Toast.LENGTH_LONG).show();*/
+
+                Intent myIntent = new Intent(getContext(), MessagesActivity.class);
+                startActivity(myIntent);
             }
         });
 
