@@ -176,7 +176,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
 
                         /* Third question: */
 
-                        ArrayList<String> onlyPumpkim = new ArrayList<>();
+                        /*ArrayList<String> onlyPumpkim = new ArrayList<>();
                         onlyPumpkim.add("pumpkins");
 
                         ArrayList<Response> responseArr = new ArrayList<>();
@@ -192,7 +192,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                                 "what exactly I should be focusing on within this piece.", 2, "Designer23"));
 
 
-                        Qarray.add(0, new Question("How can I make this piece go to the next level?", onlyPumpkim, responseArr));
+                        Qarray.add(0, new Question("How can I make this piece go to the next level?", onlyPumpkim, responseArr));*/
 
                         ds.setQuestionList(Qarray);
 
