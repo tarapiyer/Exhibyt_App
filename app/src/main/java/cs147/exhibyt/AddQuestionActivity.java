@@ -43,10 +43,10 @@ public class AddQuestionActivity extends AppCompatActivity {
         if (qText.length() == 0) {
             //This was giving me errors so I commented it out. Christina can you check this out when
             //you get the chance
-//            TextView errorMessage = findViewById(R.id.showQuestionErrors);
-//            errorMessage.setText("You must have a question to receive feedback.");
-//            errorMessage.setTextColor(Color.RED);
-//            errorMessage.setVisibility(View.VISIBLE);
+            TextView errorMessage = findViewById(R.id.showQuestionErrors);
+            errorMessage.setText("You must have a question to receive feedback.");
+            errorMessage.setTextColor(Color.RED);
+            errorMessage.setVisibility(View.VISIBLE);
             return;
         }
 
@@ -69,7 +69,7 @@ public class AddQuestionActivity extends AppCompatActivity {
 
         Question newQ = new Question(qText, imgs);
 
-        qList.add(newQ);
+        qList.add(0, newQ);
         System.out.println("Tried adding a question!");
         ds.setQuestionList(qList);
 

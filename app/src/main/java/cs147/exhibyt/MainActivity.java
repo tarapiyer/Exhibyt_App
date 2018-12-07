@@ -58,6 +58,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, homeFragment).commit();
 
 
+        // Here, we are creating the questions that appear on the explore page:
+
+        ArrayList<String> twoHorsesImage = new ArrayList<>();
+        twoHorsesImage.add("twohorses.png");
+
+        ArrayList<Response> emptyResponses = new ArrayList<>();
+
+        ArrayList<Question> exploreQuestions = new ArrayList<Question>();
+        exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage, emptyResponses, "Designer23"));
+
 
 
         /*ArrayList<String> onlyPlane = new ArrayList<>();
@@ -162,6 +172,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     public void goToExplore(View v){
         Intent myIntent = new Intent(this, GiveFeedback.class);
+        startActivity(myIntent);
+    }
+
+    public void goToMessage(View v) {
+        Intent myIntent = new Intent(this, MessagesActivity.class);
         startActivity(myIntent);
     }
 

@@ -1,10 +1,19 @@
 package cs147.exhibyt;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
 
 import androidx.fragment.app.Fragment;
 
@@ -17,6 +26,7 @@ public class allmessages extends Fragment {
 
     public allmessages() {
         // Required empty public constructor
+
     }
 
 
@@ -24,7 +34,60 @@ public class allmessages extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_allmessages, container, false);
+        View currView = inflater.inflate(R.layout.fragment_allmessages, container, false);
+
+        ArrayList<Response> userArray = new ArrayList<Response>();
+        userArray.add(new Response("Your request to connect has been sent.", 0, "Designer23"));
+        userArray.add(new Response("Your request to connect has been sent.", 0, "Susy13"));
+        userArray.add(new Response("Your request to connect has been sent.", 0, "UltimateMarker"));
+
+        ListView Qlist = (ListView) currView.findViewById(R.id.listOfUsers);
+        ResponsesAdapter adapter = new ResponsesAdapter(
+                getContext(),
+                R.layout.individual_response,
+                userArray);
+
+        Qlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // When clicked perform some action...
+                Toast.makeText(getActivity(), "Pending contact request",
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Qlist.setAdapter(adapter);
+
+        /*
+        ArrayList<Response> responseArray = qDet.getResponses();
+
+        if (responseArray.size() == 0) {
+            TextView noRespNotfi = (TextView) findViewById(R.id.noResponses);
+            noRespNotfi.setVisibility(View.VISIBLE);
+        }
+
+        ListView Qlist = (ListView) findViewById(R.id.listofResponses);
+        ResponsesAdapter adapter = new ResponsesAdapter(
+                this,
+                R.layout.individual_response,
+                responseArray);
+        Qlist.setAdapter(adapter);
+         */
+
+        return currView;
     }
+
+    private View.OnClickListener mButtonClickListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            goToMessages(v);
+        }
+    };
+
+    public void goToMessages(View v){
+        Intent myIntent = new Intent(getActivity(), MessagesActivity.class);
+        startActivity(myIntent);
+    }
+
+
 
 }
