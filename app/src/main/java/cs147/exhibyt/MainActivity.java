@@ -1,6 +1,5 @@
 package cs147.exhibyt;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -9,7 +8,6 @@ import android.view.View;
 
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -59,21 +57,45 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
         // Here, we are creating the questions that appear on the explore page:
-        if(ds.getOtherUsersQuestions() == null) {
 
+
+
+
+        if (ds.getOtherUsersQuestions().size() == 0) {
+            ArrayList<Question> exploreQuestions = new ArrayList<Question>();
+
+            //Q0
             ArrayList<String> twoHorsesImage = new ArrayList<>();
             twoHorsesImage.add("twohorses.png");
-
             ArrayList<Response> emptyResponses = new ArrayList<>();
-
-            ArrayList<Question> exploreQuestions = new ArrayList<Question>();
             exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage, emptyResponses, "Designer23"));
+
+            //Q1
+            ArrayList<String> twoHorsesImage2 = new ArrayList<>();
+            twoHorsesImage2.add("twohorses.png");
+            ArrayList<Response> emptyResponses2 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage2, emptyResponses2, "Designer23"));
+
+            //Q2
+            ArrayList<String> twoHorsesImage3 = new ArrayList<>();
+            twoHorsesImage3.add("twohorses.png");
+            ArrayList<Response> emptyResponses3 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage3, emptyResponses3, "Designer23"));
+
+            //Q3
+            ArrayList<String> twoHorsesImage4 = new ArrayList<>();
+            twoHorsesImage4.add("twohorses.png");
+            ArrayList<Response> emptyResponses4 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage4, emptyResponses4, "Designer23"));
+
+            //Q4
+            ArrayList<String> twoHorsesImage5 = new ArrayList<>();
+            twoHorsesImage5.add("twohorses.png");
+            ArrayList<Response> emptyResponses5 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage5, emptyResponses5, "Designer23"));
+
             ds.setOtherUsersQuestions(exploreQuestions);
-
         }
-
-
-
 
         /*ArrayList<String> onlyPlane = new ArrayList<>();
         onlyPlane.add("plane");
@@ -152,7 +174,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Intent myIntent = new Intent(this, MainActivity.class);
         startActivity(myIntent);
     }
-
 
     public void goToMessages(View v){
         Intent myIntent = new Intent(this, MessagesActivity.class);
