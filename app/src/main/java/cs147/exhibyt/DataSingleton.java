@@ -19,6 +19,7 @@ class DataSingleton {
 
     private DataSingleton() {
         questionList = new ArrayList<Question>();
+        messages = new ArrayList<Message>();
     }
 
     public ArrayList<Question> getQuestionList() {
@@ -30,6 +31,16 @@ class DataSingleton {
     }
 
     private ArrayList<Question> questionList;
+
+    public ArrayList<Message> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(ArrayList<Message> messages) {
+        this.messages = messages;
+    }
+
+    private ArrayList<Message> messages;
 
 
 }
