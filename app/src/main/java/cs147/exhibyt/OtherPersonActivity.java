@@ -35,7 +35,7 @@ public class OtherPersonActivity extends Activity {
         TextView text4 = findViewById(R.id.otherText4);
 
         String about = "NOTGOOD";
-        if(userName == "UltimateMaker") {
+        if(userName == "UltimateMarker") {
             about = "I’m Wilde. Artist by day. Critique by night. Reach out about collabs. I don’t bite. Usually";
             profilePic.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" + "ultimatemarker"
                     , null, null));
