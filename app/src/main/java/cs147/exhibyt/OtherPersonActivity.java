@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 
@@ -78,6 +79,13 @@ public class OtherPersonActivity extends Activity {
 
         idText.setText(about);
         otherPersonName.setText(userName);
+    }
+
+    public void onSendOtherMessage(View view){
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "We have sent your request to connect",
+                Toast.LENGTH_LONG);
+        toast.show();
     }
 
 

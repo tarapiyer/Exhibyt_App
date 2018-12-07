@@ -121,6 +121,14 @@ public class ViewQuestionActivity extends AppCompatActivity {
 
 
     }
+
+    public void goBackToHome(View view){
+        Intent myIntent = new Intent(this, MainActivity.class);
+        startActivity(myIntent);
+    }
+
+
+
     public void goToOtherPerson(View view){
         Intent myIntent = new Intent(this, OtherPersonActivity.class);
         myIntent.putExtra("QUESTION_ID", questionId);

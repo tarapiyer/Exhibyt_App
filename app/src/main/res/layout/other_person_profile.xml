@@ -30,8 +30,10 @@
 
         <ImageView
             android:id="@+id/material_icon_button"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onSendOtherMessage"
             android:src="@drawable/ic_message"
             android:background="?attr/selectableItemBackgroundBorderless"/>
 
