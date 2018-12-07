@@ -58,6 +58,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         // Here, we are creating the questions that appear on the explore page:
 
+        ArrayList<String> twoHorsesImage = new ArrayList<>();
+        twoHorsesImage.add("twohorses.png");
+
+        ArrayList<Response> emptyResponses = new ArrayList<>();
+
+        ArrayList<Question> exploreQuestions = new ArrayList<Question>();
+        exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage, emptyResponses, "Designer23"));
+
 
 
         /*ArrayList<String> onlyPlane = new ArrayList<>();
