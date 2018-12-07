@@ -5,7 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="cs147.exhibyt.ExploreActivity">
+    tools:context="cs147.exhibyt.ExploreActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/myTitle"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Explore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity ="center"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@fonts/sarala_bold"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            />
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
