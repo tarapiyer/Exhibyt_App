@@ -57,11 +57,12 @@
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <ImageView
+                        <ImageButton
+                            android:id="@+id/material_icon_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:src="@drawable/baseline_comment_black_18dp" />
+                            android:src="@drawable/ic_android_black_24dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"/>
 
                     </LinearLayout>
 
@@ -109,11 +110,12 @@
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <ImageView
+                        <ImageButton
+                            android:id="@id/material_icon_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:src="@drawable/baseline_comment_black_18dp" />
+                            android:src="@drawable/ic_android_black_24dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"/>
 
                     </LinearLayout>
 
@@ -160,11 +162,12 @@
                             android:background="@color/colorWhite"
                             android:textColor="@color/colorPrimaryDark"/>
 
-                        <ImageView
+                        <ImageButton
+                            android:id="@id/material_icon_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_comment_black_18dp"
-                            android:layout_gravity="right"/>
+                            android:src="@drawable/ic_android_black_24dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"/>
 
                     </LinearLayout>
 
@@ -212,11 +215,12 @@
                             android:background="@color/colorWhite"
                             android:textColor="@color/colorPrimaryDark"/>
 
-                        <ImageView
+                        <ImageButton
+                            android:id="@id/material_icon_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_comment_black_18dp"
-                            android:layout_gravity="right"/>
+                            android:src="@drawable/ic_android_black_24dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"/>
 
                     </LinearLayout>
 
@@ -264,11 +268,12 @@
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <ImageView
+                        <ImageButton
+                            android:id="@id/material_icon_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:src="@drawable/baseline_comment_black_18dp" />
+                            android:src="@drawable/ic_android_black_24dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"/>
 
                     </LinearLayout>
 
@@ -279,8 +284,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
 
 </FrameLayout>
