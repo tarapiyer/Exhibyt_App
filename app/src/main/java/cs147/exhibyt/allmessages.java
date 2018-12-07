@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -44,6 +46,16 @@ public class allmessages extends Fragment {
                 getContext(),
                 R.layout.individual_response,
                 userArray);
+
+        Qlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // When clicked perform some action...
+                Toast.makeText(getActivity(), "Pending contact request",
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+
         Qlist.setAdapter(adapter);
 
         /*

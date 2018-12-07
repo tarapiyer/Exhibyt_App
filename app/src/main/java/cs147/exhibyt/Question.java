@@ -53,6 +53,7 @@ public class Question {
     public Question(String questionText, ArrayList<String> imageNames, ArrayList<Response> responses) {
         this.questionText = questionText;
         this.responses = responses;
+
         this.imageNames = imageNames;
         Date date = new Date();
         this.id = questionText + Long.toString(date.getTime());
