@@ -35,8 +35,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_close" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/close.svg" />
+                            <entry key="outputName" value="ic_help" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/questioncomment.svg" />
                           </map>
                         </option>
                       </PersistentState>
