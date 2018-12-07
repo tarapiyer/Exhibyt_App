@@ -10,45 +10,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/profilePic"
+        android:layout_marginTop="18dp"
         android:src="@drawable/designer23"/>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:rowCount="2"
-        android:columnCount="1"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="15dp"
+        android:columnCount="1"
+        android:rowCount="2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal"
             android:layout_row="0"
-            android:layout_column="0">
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/userCommenting"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/userCommenting"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:fontFamily="@fonts/sarala_bold"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp" />
 
             <TextView
+                android:id="@+id/commentTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/commentTime"
-                />
+                android:fontFamily="@fonts/sarala_regular"
+                android:textColor="#959595"
+                android:textSize="15sp" />
         </LinearLayout>
 
 
         <TextView
+            android:id="@+id/commentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/commentText"
             android:layout_row="1"
-            android:layout_column="0"/>
+            android:textAppearance="@color/colorPrimary"
+            android:layout_column="0"
+            android:fontFamily="@fonts/sarala_regular"
+            android:lineSpacingExtra = "3dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="3dp"/>
 
     </GridLayout>
 

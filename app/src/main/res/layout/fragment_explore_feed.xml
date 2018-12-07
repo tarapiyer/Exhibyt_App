@@ -80,8 +80,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:text="Rainbow Stallion"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Fernssss"
+                            android:textColor="@color/colorAccent"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -136,8 +136,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:text="Rainbow Stallion"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Fractal Kitty"
+                            android:textColor="@color/colorAccent"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -184,7 +184,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Rainbow Stallion"
+                            android:text="Gushers"
                             android:gravity="left"
                             android:fontFamily="@fonts/sarala_bold"
                             android:textStyle="bold"
@@ -193,7 +193,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorPrimaryDark"/>
+                            android:textColor="@color/colorAccent"/>
 
                         <ImageButton
                             android:id="@+id/material_icon_button3"
@@ -239,7 +239,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Rainbow Stallion"
+                            android:text="Handprints"
                             android:gravity="left"
                             android:fontFamily="@fonts/sarala_bold"
                             android:textStyle="bold"
@@ -248,7 +248,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorPrimaryDark"/>
+                            android:textColor="@color/colorAccent"/>
 
                         <ImageButton
                             android:id="@+id/material_icon_button4"
@@ -301,8 +301,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:text="Rainbow Stallion"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Blue Beauty"
+                            android:textColor="@color/colorAccent"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
