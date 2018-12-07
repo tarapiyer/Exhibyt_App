@@ -58,11 +58,22 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:paddingBottom="5dp"
             android:text="I’m Wilde. Artist by day. Critique by night.
 Reach out about collabs. I don’t bite. Usually"
             android:textSize="15dp" />
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
 
 
 </LinearLayout>

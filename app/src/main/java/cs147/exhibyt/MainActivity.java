@@ -1,5 +1,6 @@
 package cs147.exhibyt;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,6 +9,7 @@ import android.view.View;
 
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -135,6 +137,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Intent myIntent = new Intent(this, MainActivity.class);
         startActivity(myIntent);
     }
+
 
     public void goToMessages(View v){
         Intent myIntent = new Intent(this, MessagesActivity.class);
