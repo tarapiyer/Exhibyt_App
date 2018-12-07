@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             ArrayList<String> twoHorsesImage3 = new ArrayList<>();
             twoHorsesImage3.add("gushers");
             ArrayList<Response> emptyResponses3 = new ArrayList<>();
-            exploreQuestions.add(new Question("How can I improve on contrast?", twoHorsesImage3, emptyResponses3, "UltimateMaker"));
+            exploreQuestions.add(new Question("How can I improve on contrast?", twoHorsesImage3, emptyResponses3, "UltimateMarker"));
 
             //Q3
             ArrayList<String> twoHorsesImage4 = new ArrayList<>();
