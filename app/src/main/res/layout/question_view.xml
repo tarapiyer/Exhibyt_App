@@ -8,7 +8,7 @@
         android:layout_width="110dp"
         android:layout_height="100dp"
         android:id="@+id/firstPic"
-        android:src="@drawable/halloween"
+        android:src="@drawable/nopicture"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="20dp"/>
 
