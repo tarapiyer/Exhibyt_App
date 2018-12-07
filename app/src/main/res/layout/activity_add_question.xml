@@ -28,10 +28,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Question:"
+        android:text="Question (Required):"
         android:fontFamily="@fonts/sarala_regular"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textSize="20sp"/>
     <TextView
         android:layout_width="wrap_content"
@@ -47,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
         android:layout_width="fill_parent"
         android:textSize="14sp"
         android:padding="10dp"
@@ -62,12 +63,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Include artwork to give context"
+        android:text="Include artwork to give context (Optional):"
         android:fontFamily="@fonts/sarala_regular"
         android:textSize="20sp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp">
     <LinearLayout
         android:id="@+id/upload_work_part1"
         android:layout_width="fill_parent"
@@ -79,7 +84,6 @@
             android:id="@+id/planeImage"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
             android:alpha="0.2"
             android:onClick="changeOpacity"
@@ -87,7 +91,6 @@
 
         <ImageView
             android:id="@+id/halloweenImage"
-            android:layout_marginTop="30dp"
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:alpha="0.2"
@@ -122,25 +125,37 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/upload_work_part2"
+        android:id="@+id/upload_work_part3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
 
-        <ImageView
+        <TextView
             android:id="@+id/addNewArtwork"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:background="@color/colorAccent"
+            android:background="#F8F8F8"
             android:onClick="addArtworkDialog"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:text="Upload More\nArt"
+            android:textColor="@color/colorAccent"
+            android:gravity="center|center_vertical"
+            android:fontFamily="@fonts/sarala_bold"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:alpha="0.2"
+            android:visibility="invisible"/>
 
+    </LinearLayout>
     </LinearLayout>
 
     <Button
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
