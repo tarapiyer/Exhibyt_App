@@ -84,7 +84,7 @@ public class GiveFeedback extends Activity {
             //This was giving me errors so I commented it out. Christina can you check this out when
             //you get the chance
             TextView errorMessage = findViewById(R.id.showGiveFeedbackErrors);
-            errorMessage.setText("ERROR: You provide feedback to see others'.");
+            errorMessage.setText("ERROR: You most provide comments to see others' feedback.");
             errorMessage.setTextColor(Color.RED);
             errorMessage.setVisibility(View.VISIBLE);
             return;
