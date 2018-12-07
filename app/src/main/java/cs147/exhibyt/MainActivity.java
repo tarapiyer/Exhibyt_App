@@ -61,40 +61,41 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
 
+        if (ds.getOtherUsersQuestions().size() == 0) {
+            ArrayList<Question> exploreQuestions = new ArrayList<Question>();
 
-        ArrayList<Question> exploreQuestions = new ArrayList<Question>();
+            //Q0
+            ArrayList<String> twoHorsesImage = new ArrayList<>();
+            twoHorsesImage.add("twohorses.png");
+            ArrayList<Response> emptyResponses = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage, emptyResponses, "Designer23"));
 
-        //Q0
-        ArrayList<String> twoHorsesImage = new ArrayList<>();
-        twoHorsesImage.add("twohorses.png");
-        ArrayList<Response> emptyResponses = new ArrayList<>();
-        exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage, emptyResponses, "Designer23"));
+            //Q1
+            ArrayList<String> twoHorsesImage2 = new ArrayList<>();
+            twoHorsesImage2.add("twohorses.png");
+            ArrayList<Response> emptyResponses2 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage2, emptyResponses2, "Designer23"));
 
-        //Q1
-        ArrayList<String> twoHorsesImage2 = new ArrayList<>();
-        twoHorsesImage2.add("twohorses.png");
-        ArrayList<Response> emptyResponses2 = new ArrayList<>();
-        exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage2, emptyResponses2, "Designer23"));
+            //Q2
+            ArrayList<String> twoHorsesImage3 = new ArrayList<>();
+            twoHorsesImage3.add("twohorses.png");
+            ArrayList<Response> emptyResponses3 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage3, emptyResponses3, "Designer23"));
 
-        //Q2
-        ArrayList<String> twoHorsesImage3 = new ArrayList<>();
-        twoHorsesImage3.add("twohorses.png");
-        ArrayList<Response> emptyResponses3 = new ArrayList<>();
-        exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage3, emptyResponses3, "Designer23"));
+            //Q3
+            ArrayList<String> twoHorsesImage4 = new ArrayList<>();
+            twoHorsesImage4.add("twohorses.png");
+            ArrayList<Response> emptyResponses4 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage4, emptyResponses4, "Designer23"));
 
-        //Q3
-        ArrayList<String> twoHorsesImage4 = new ArrayList<>();
-        twoHorsesImage4.add("twohorses.png");
-        ArrayList<Response> emptyResponses4 = new ArrayList<>();
-        exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage4, emptyResponses4, "Designer23"));
+            //Q4
+            ArrayList<String> twoHorsesImage5 = new ArrayList<>();
+            twoHorsesImage5.add("twohorses.png");
+            ArrayList<Response> emptyResponses5 = new ArrayList<>();
+            exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage5, emptyResponses5, "Designer23"));
 
-        //Q4
-        ArrayList<String> twoHorsesImage5 = new ArrayList<>();
-        twoHorsesImage5.add("twohorses.png");
-        ArrayList<Response> emptyResponses5 = new ArrayList<>();
-        exploreQuestions.add(new Question("What is the best thing here?", twoHorsesImage5, emptyResponses5, "Designer23"));
-
-        ds.setOtherUsersQuestions(exploreQuestions);
+            ds.setOtherUsersQuestions(exploreQuestions);
+        }
 
         /*ArrayList<String> onlyPlane = new ArrayList<>();
         onlyPlane.add("plane");
