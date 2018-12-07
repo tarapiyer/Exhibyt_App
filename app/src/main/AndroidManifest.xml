@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".Camera_Roll_Activity" />
         <activity android:name=".CameraRollActivity" />
+        <activity android:name=".OtherPersonActivity" />
         <activity android:name=".UploadPictureActivity" />
         <activity android:name=".AddQuestionActivity" />
         <activity android:name=".ViewQuestionActivity" />

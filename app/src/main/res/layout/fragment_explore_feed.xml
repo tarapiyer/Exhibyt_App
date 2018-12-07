@@ -156,8 +156,9 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="Rainbow Stallion"
                             android:gravity="left"
                             android:fontFamily="@fonts/sarala_bold"
@@ -211,8 +212,9 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="Rainbow Stallion"
                             android:gravity="left"
                             android:fontFamily="@fonts/sarala_bold"

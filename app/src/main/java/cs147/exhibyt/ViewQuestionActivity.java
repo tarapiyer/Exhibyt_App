@@ -1,5 +1,6 @@
 package cs147.exhibyt;
 
+import android.content.Intent;
 import android.graphics.Picture;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,6 +23,8 @@ import static android.icu.lang.UCharacter.toLowerCase;
 
 public class ViewQuestionActivity extends AppCompatActivity {
 
+    String questionId = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +32,7 @@ public class ViewQuestionActivity extends AppCompatActivity {
 
         DataSingleton ds = DataSingleton.getInstance();
 
-        String questionId = getIntent().getStringExtra("QUESTION_ID");
+        questionId = getIntent().getStringExtra("QUESTION_ID");
         ArrayList Qs = ds.getQuestionList();
         Question qDet = new Question();
         if (questionId.length() == 1) {
@@ -37,8 +40,7 @@ public class ViewQuestionActivity extends AppCompatActivity {
             qDet = (Question) Qs.get(Integer.parseInt(questionId));
 
             TextView userInfo = (TextView) findViewById(R.id.reviewFeedback);
-            userInfo.setText("Set Feedback for " + qDet.getUserName());
-            userInfo.setOnClickListener(mCorkyListener);
+            userInfo.setText("Review Feedback for " + qDet.getUserName());
         } else {
 
             Iterator qIter = Qs.iterator();
@@ -107,15 +109,10 @@ public class ViewQuestionActivity extends AppCompatActivity {
 
 
     }
-
-    // Create an anonymous implementation of OnClickListener
-    private View.OnClickListener mCorkyListener = new View.OnClickListener() {
-        public void onClick(View v) {
-            System.out.println("Let's just get this over with");
-            // do something when the button is clicked
-            // Yes we will handle click here but which button clicked??? We don't know
-
-        }
-    };
+    public void goToOtherPerson(View view){
+        Intent myIntent = new Intent(this, OtherPersonActivity.class);
+        myIntent.putExtra("QUESTION_ID", questionId);
+        startActivity(myIntent);
+    }
 
 }
