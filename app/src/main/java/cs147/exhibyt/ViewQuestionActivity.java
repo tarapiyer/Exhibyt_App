@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -35,10 +37,10 @@ public class ViewQuestionActivity extends AppCompatActivity {
 
         questionId = getIntent().getStringExtra("QUESTION_ID");
         ArrayList Qs = ds.getQuestionList();
-        Question qDet = new Question();
+        Question qDetTemp = new Question();
         if (questionId.length() == 1) {
             Qs = ds.getOtherUsersQuestions();
-            qDet = (Question) Qs.get(Integer.parseInt(questionId));
+            qDetTemp = (Question) Qs.get(Integer.parseInt(questionId));
 
             /*TextView userInfo = (TextView) findViewById(R.id.reviewFeedback);
             userInfo.setText("Review Feedback for " + qDet.getUserName());*/
@@ -47,23 +49,24 @@ public class ViewQuestionActivity extends AppCompatActivity {
             forMeetingOtherPpl.setVisibility(View.VISIBLE);
 
             ImageView img = (ImageView) findViewById(R.id.otherPersonPic);
-            int id = getResources().getIdentifier("cs147.exhibyt:drawable/" + Question.convertPicNameToDrawableName(qDet.getUserName())
+            int id = getResources().getIdentifier("cs147.exhibyt:drawable/" + Question.convertPicNameToDrawableName(qDetTemp.getUserName())
                     , null, null);
             img.setImageResource(id);
 
             TextView userInfo = (TextView) findViewById(R.id.otherUserName);
-            userInfo.setText("Meet " + qDet.getUserName());
+            userInfo.setText("Meet " + qDetTemp.getUserName());
         } else {
 
             Iterator qIter = Qs.iterator();
             while (qIter.hasNext()) {
                 Question curr = (Question) qIter.next();
                 if (curr.getId().equals(questionId)) {
-                    qDet = curr;
+                    qDetTemp = curr;
                     break;
                 }
             }
         }
+        final Question qDet = qDetTemp;
         setTitle("Question Details");
 
         TextView qTitle = (TextView) findViewById(R.id.questionText);
@@ -121,8 +124,25 @@ public class ViewQuestionActivity extends AppCompatActivity {
                 responseArray);
         Qlist.setAdapter(adapter);
 
-
+        Qlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent myIntent = new Intent(getApplicationContext(), OtherPersonActivity.class);
+                DataSingleton ds = DataSingleton.getInstance();
+                ArrayList<Response> rList = qDet.getResponses();
+                Response curr = rList.get(position);
+                myIntent.putExtra("RESPONSE_USERNAME", curr.getUsername());
+                startActivity(myIntent);
+            }
+        });
     }
+
+//    public void doHelp(View view){
+//        Intent myIntent = new Intent(this, OtherPersonActivity.class);
+//
+//        myIntent.putExtra("QUESTION_ID", );
+//        startActivity(myIntent);
+//    }
 
     public void goBackToHome(View view){
         Intent myIntent = new Intent(this, MainActivity.class);
