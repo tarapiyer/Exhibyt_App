@@ -165,14 +165,14 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         /* Second question: */
                         // Do both at the same time
                         ArrayList<String> multiple = new ArrayList<>();
-                        multiple.add("mask");
-                        multiple.add("mask");
+                        multiple.add("plane");
+                        multiple.add("halloween");
 
                         ArrayList<Response> multipleResponsesArray = new ArrayList<Response>();
-                        multipleResponsesArray.add(new Response("I don't really see a difference between the two, but I love how the shadows of the eyes is a different shade from the drawn nose, highlighting how that part of the mask has been cut out of the mask.", 1, "Designer23"));
-                        multipleResponsesArray.add(new Response("I don't get it. They're the same picture.", 2, "Susy13"));
+                        multipleResponsesArray.add(new Response("I love how the black background in the second picture makes the orange pumpkins pop! Also, the red background in the first picture (of the plane) is incredibly vibrant. They're both great!", 1, "Designer23"));
+                        multipleResponsesArray.add(new Response("The first picture for sure. I love the way you drew the plane, but the second picture makes no sense to me.", 2, "Susy13"));
 
-                        Qarray.add(0, new Question("Which of these pieces are better?", multiple, multipleResponsesArray));
+                        Qarray.add(0, new Question("Which of these pieces is better?", multiple, multipleResponsesArray));
 
                         /* Third question: */
 
