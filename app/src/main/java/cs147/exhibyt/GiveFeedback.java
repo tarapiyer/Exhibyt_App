@@ -2,6 +2,7 @@ package cs147.exhibyt;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -76,6 +77,19 @@ public class GiveFeedback extends Activity {
 
     public void submitFeedback(View v) {
         TextView txt = (TextView) findViewById(R.id.textComment);
+
+
+        String qText = txt.getText().toString();
+        if (qText.length() == 0) {
+            //This was giving me errors so I commented it out. Christina can you check this out when
+            //you get the chance
+            TextView errorMessage = findViewById(R.id.showGiveFeedbackErrors);
+            errorMessage.setText("ERROR: You provide feedback to see others'.");
+            errorMessage.setTextColor(Color.RED);
+            errorMessage.setVisibility(View.VISIBLE);
+            return;
+        }
+
 
         id = getIntent().getStringExtra("id");
         DataSingleton ds = DataSingleton.getInstance();
