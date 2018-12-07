@@ -162,6 +162,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         startActivity(myIntent);
     }
 
+    public void goToMessage(View v) {
+        Intent myIntent = new Intent(this, MessagesActivity.class);
+        startActivity(myIntent);
+    }
+
     explore_feed explore_feedFragment = new explore_feed();
     home homeFragment = new home();
     allmessages allmessages = new allmessages();

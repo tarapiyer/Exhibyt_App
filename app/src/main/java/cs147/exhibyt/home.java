@@ -162,7 +162,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         placeResponseArray.add(new Response("The small details on the plane are nice", 2, "Susy13"));
                         placeResponseArray.add(new Response("The fact that the palne isn't just a silouhette. The slight shading makes this work go to the next level.", 2, "Designer23"));
 
-                        Qarray.add(new Question("What is the best part of this picture?", onlyPlane, placeResponseArray));
+                        Qarray.add(0, new Question("What is the best part of this picture?", onlyPlane, placeResponseArray));
 
                         /* Second question: */
 // Do both at the same time
@@ -174,7 +174,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         multipleResponsesArray.add(new Response("I don't really see a difference between the two, but I love how the shadows of the eyes is a different shade from the drawn nose, highlighting how that part of the mask has been cut out of the mask.", 1, "Designer23"));
                         multipleResponsesArray.add(new Response("I don't get it. They're the same picture.", 2, "Susy13"));
 
-                        Qarray.add(new Question("Which of these pieces are better?", multiple, multipleResponsesArray));
+                        Qarray.add(0, new Question("Which of these pieces are better?", multiple, multipleResponsesArray));
 
                         /* Third question: */
 
@@ -194,7 +194,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                                 "what exactly I should be focusing on within this piece.", 1, "Designer23"));
 
 
-                        Qarray.add(new Question("How can I make this piece go to the next level?", onlyPumpkim, responseArr));
+                        Qarray.add(0, new Question("How can I make this piece go to the next level?", onlyPumpkim, responseArr));
 
                         ds.setQuestionList(Qarray);
 
@@ -205,10 +205,10 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
 
             }
 
-            if (Qarray.size() == 4) {
+            /*if (Qarray.size() == 4) {
                 Toast.makeText(getActivity(), "Let's get started reviewing your feedback!",
                         Toast.LENGTH_LONG).show();
-            }
+            }*/
 
             ds.setQuestionList(Qarray);
         }
