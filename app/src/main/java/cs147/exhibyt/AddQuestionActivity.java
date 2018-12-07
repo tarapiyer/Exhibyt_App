@@ -60,13 +60,13 @@ public class AddQuestionActivity extends AppCompatActivity {
         curr = (ImageView) findViewById(R.id.halloweenImage);
         if (curr.getAlpha() == 1) imgs.add("halloween");
 
-        //See if mask image selected
+        /*//See if mask image selected
         curr = (ImageView) findViewById(R.id.maskImage);
         if (curr.getAlpha() == 1) imgs.add("mask");
 
         //See if pumpkins image selected
         curr = (ImageView) findViewById(R.id.pumpkinImage);
-        if (curr.getAlpha() == 1) imgs.add("pumpkins");
+        if (curr.getAlpha() == 1) imgs.add("pumpkins");*/
 
         Question newQ = new Question(qText, imgs);
 

@@ -49,8 +49,12 @@ public class QuestionsAdapter extends ArrayAdapter<Question> {
         curr.setText(q.getQText());
         ImageView currImg = (ImageView) qsView.findViewById(R.id.firstPic);
         ArrayList<String> imageNames = q.getArtworks();
-        if (!imageNames.isEmpty()) {
+        if (!imageNames.isEmpty() && imageNames.size() == 1) {
             int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/" + Question.convertPicNameToDrawableName(imageNames.get(0))
+                    , null, null);
+            currImg.setImageResource(id);
+        } else {
+            int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/duo"
                     , null, null);
             currImg.setImageResource(id);
         }

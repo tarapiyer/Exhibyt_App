@@ -91,7 +91,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Fernssss"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -141,7 +141,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Fractal Kitty"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -196,7 +196,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:onClick="submitFeedback"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:text="Submit" />
 
         </LinearLayout>
