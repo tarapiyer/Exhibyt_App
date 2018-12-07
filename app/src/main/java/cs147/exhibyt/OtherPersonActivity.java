@@ -36,7 +36,7 @@ public class OtherPersonActivity extends Activity {
         TextView text4 = findViewById(R.id.otherText4);
 
         String about = "NOTGOOD";
-        if(userName == "UltimateMarker") {
+        if(userName.equals("UltimateMarker")) {
             about = "I’m Wilde. Artist by day. Critique by night. Reach out about collabs. I don’t bite. Usually";
             profilePic.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" + "ultimatemarker"
                     , null, null));
@@ -44,7 +44,7 @@ public class OtherPersonActivity extends Activity {
             img1.setImageResource(R.drawable.gushers);
             text1.setText("Gushers");
 
-        } else if(userName == "Susy13"){
+        } else if(userName.equals("Susy13")){
             about = "Art is life and I'm immortal. If you love art and want to buy, give me a chat!";
             profilePic.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" + "susy13"
                     , null, null));
@@ -57,7 +57,7 @@ public class OtherPersonActivity extends Activity {
             text2.setText("Pig Sloth");
             img3.setImageResource(R.drawable.blue_beauty);
             text3.setText("Blue Beauty");
-        } else if (userName == "Designer23") {
+        } else if (userName.equals("Designer23")) {
             about = "Let us make art together. I am new but with practice I will be great. Join me!";
             profilePic.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" + "designer23"
                     , null, null));

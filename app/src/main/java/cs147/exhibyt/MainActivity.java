@@ -48,13 +48,26 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         DataSingleton ds = DataSingleton.getInstance();
 
+        String goToHome = getIntent().getStringExtra("BackToHome");
+        if (goToHome == null) {
+            goToHome = "home";
+        }
+
+
+
         ArrayList<Question> Qarray = ds.getQuestionList();//new ArrayList<>();
-
         bottomNavigationView = findViewById(R.id.bottomNavigation);
-        bottomNavigationView.setSelectedItemId(R.id.homeMNav);
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, homeFragment).commit();
+        if(goToHome.equals("explore")) {
+            bottomNavigationView.setSelectedItemId(R.id.exploreMNav);
+            bottomNavigationView.setOnNavigationItemSelectedListener(this);
+            getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, explore_feedFragment).commit();
+        } else {
+            bottomNavigationView.setSelectedItemId(R.id.homeMNav);
+            bottomNavigationView.setOnNavigationItemSelectedListener(this);
+            getSupportFragmentManager().beginTransaction().replace(R.id.containerMain, homeFragment).commit();
+        }
+
 
 
         // Here, we are creating the questions that appear on the explore page:

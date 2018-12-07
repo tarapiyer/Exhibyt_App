@@ -126,6 +126,9 @@ public class ViewQuestionActivity extends AppCompatActivity {
 
     public void goBackToHome(View view){
         Intent myIntent = new Intent(this, MainActivity.class);
+        if(questionId.length() == 1) {
+            myIntent.putExtra("BackToHome", "explore");
+        }
         startActivity(myIntent);
     }
 
