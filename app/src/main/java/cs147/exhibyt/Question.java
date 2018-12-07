@@ -85,7 +85,7 @@ public class Question {
     }
 
     public void addNewResponse(String commentText, String userName){
-        long currTime = System.currentTimeMillis();
+        long currTime = 0;
         Response newResponse = new Response(commentText, currTime, userName);
         responses.add(0, newResponse);
     }

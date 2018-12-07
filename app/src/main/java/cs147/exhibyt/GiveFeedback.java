@@ -1,10 +1,13 @@
 package cs147.exhibyt;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -54,6 +57,21 @@ public class GiveFeedback extends Activity {
             CardView card2 = findViewById(R.id.giveCard2);
             card2.setVisibility(View.GONE);
         }
+    }
+
+    public void submitFeedback(View v) {
+        TextView txt = (TextView) findViewById(R.id.textComment);
+
+        id = getIntent().getStringExtra("id");
+        DataSingleton ds = DataSingleton.getInstance();
+        ArrayList<Question> questions = ds.getOtherUsersQuestions();
+        Question question = questions.get(Integer.parseInt(id));
+        question.addNewResponse(txt.getText().toString(), "Me");
+
+        Intent myIntent = new Intent(this, ViewQuestionActivity.class);
+        myIntent.putExtra("QUESTION_ID", id);
+        startActivity(myIntent);
+        //Moo
     }
 
 

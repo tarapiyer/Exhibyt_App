@@ -137,9 +137,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         DataSingleton ds = DataSingleton.getInstance();
                         ArrayList<Question> Qarray = ds.getQuestionList();
 
-// Going to simulate having a good time with adding responses and more questions with responses
-
-
+                        // Going to simulate having a good time with adding responses and more questions with responses
 
                         ArrayList<Response> responseArray = new ArrayList<>();
                         responseArray.add(new Response("The Gourds of Order is an awesome name but the photo doesn't say \"Boo!\"", 1, "Designer23"));
@@ -152,11 +150,11 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         newlyAddedQ.setResponses(responseArray);
 
                         /* Add the first question:*/
-// Start with the picture
+                        // Start with the picture
                         ArrayList<String> onlyPlane = new ArrayList<>();
                         onlyPlane.add("plane");
 
-// Now working with the responses
+                        // Now working with the responses
                         ArrayList<Response> placeResponseArray = new ArrayList<>();
                         placeResponseArray.add(new Response("I love the colors used in the photo. The use of blue in clouds really makes the image pop.", 1, "Designer23"));
                         placeResponseArray.add(new Response("The small details on the plane are nice", 2, "Susy13"));
@@ -165,7 +163,7 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         Qarray.add(0, new Question("What is the best part of this picture?", onlyPlane, placeResponseArray));
 
                         /* Second question: */
-// Do both at the same time
+                        // Do both at the same time
                         ArrayList<String> multiple = new ArrayList<>();
                         multiple.add("mask");
                         multiple.add("mask");
@@ -184,12 +182,12 @@ Qarray.add(new Question("What is scary?", multiple, responseArr));*/
                         ArrayList<Response> responseArr = new ArrayList<>();
                         responseArr.add(new Response("There are too many pumpkins and too few goblins.", 1, "UltimateMarker"));
                         responseArr.add(new Response("All the pumpkims are too orange. We need more diversity in colors here.", 2, "Susy13"));
-                        responseArr.add(new Response("\tHeads up, this is going to be a very long comment.\n\t" +
+                        responseArr.add(new Response("Heads up, this is going to be a very long comment.\n" +
                                 "Before I talk about how to make this piece go to the next level, we need to see what this piece does well, and what it doesn't." +
                                 "This piece does a wonderful job shading the pumpkins. Looking at each individual pumpkin, we see that the shading and coloring" +
                                 "of each pumpkin is different, making looking at each pumpkin quite the pleasure. In addition, the use of almost complementary colors" +
                                 "with the orange and green really make each other color pop in comparison. On the other hand, the relative monotony of the" +
-                                "size of hte pumpkins makes it a little less interesting.\n\tHowever, I would say that the lack of focal point is the true area that" +
+                                "size of hte pumpkins makes it a little less interesting.\nHowever, I would say that the lack of focal point is the true area that" +
                                 "could see massive improvement. These piece doesn't really have a focal point, so my eye ends up wandering around to figure out" +
                                 "what exactly I should be focusing on within this piece.", 1, "Designer23"));
 

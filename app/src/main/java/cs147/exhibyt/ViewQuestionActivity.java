@@ -28,17 +28,28 @@ public class ViewQuestionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_question);
 
         DataSingleton ds = DataSingleton.getInstance();
+
+        String questionId = getIntent().getStringExtra("QUESTION_ID");
         ArrayList Qs = ds.getQuestionList();
-        Iterator qIter = Qs.iterator();
         Question qDet = new Question();
-        while (qIter.hasNext()) {
-            Question curr = (Question) qIter.next();
-            if (curr.getId().equals(getIntent().getStringExtra("QUESTION_ID"))) {
-                qDet = curr;
-                break;
+        if (questionId.length() == 1) {
+            Qs = ds.getOtherUsersQuestions();
+            qDet = (Question) Qs.get(Integer.parseInt(questionId));
+
+            TextView userInfo = (TextView) findViewById(R.id.reviewFeedback);
+            userInfo.setText("Set Feedback for " + qDet.getUserName());
+            userInfo.setOnClickListener(mCorkyListener);
+        } else {
+
+            Iterator qIter = Qs.iterator();
+            while (qIter.hasNext()) {
+                Question curr = (Question) qIter.next();
+                if (curr.getId().equals(questionId)) {
+                    qDet = curr;
+                    break;
+                }
             }
         }
-
         setTitle("Question Details");
 
         TextView qTitle = (TextView) findViewById(R.id.questionText);
@@ -96,5 +107,15 @@ public class ViewQuestionActivity extends AppCompatActivity {
 
 
     }
+
+    // Create an anonymous implementation of OnClickListener
+    private View.OnClickListener mCorkyListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            System.out.println("Let's just get this over with");
+            // do something when the button is clicked
+            // Yes we will handle click here but which button clicked??? We don't know
+
+        }
+    };
 
 }
