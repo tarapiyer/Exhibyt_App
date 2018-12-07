@@ -60,6 +60,7 @@
                         android:layout_height="200dp"
                         android:background="@color/colorWhite"
                         android:scaleType="centerCrop"
+                        android:onClick="goToQ0"
                         android:src="@drawable/fernssss" />
 
                     <LinearLayout
@@ -80,7 +81,8 @@
                             android:text="Fernssss"
                             android:textColor="#808080"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:onClick="goToQ0"/>
 
                         <ImageView
                             android:id="@+id/material_icon_button1"
@@ -117,7 +119,8 @@
                         android:id="@+id/exploreImage2"
                         android:background="@color/colorWhite"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/fractal_kitty" />
+                        android:src="@drawable/fractal_kitty"
+                        android:onClick="goToQ1"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -137,7 +140,8 @@
                             android:text="Fractal Kitty"
                             android:textColor="#808080"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:onClick="goToQ1"/>
 
                         <ImageView
                             android:id="@+id/material_icon_button2"
@@ -173,7 +177,8 @@
                         android:id="@+id/exploreImage3"
                         android:src="@drawable/gushers"
                         android:scaleType="centerCrop"
-                        android:background="@color/colorWhite"/>
+                        android:background="@color/colorWhite"
+                        android:onClick="goToQ2"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -193,7 +198,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="#808080"/>
+                            android:textColor="#808080"
+                            android:onClick="goToQ2"/>
 
                         <ImageView
                             android:id="@+id/material_icon_button3"
@@ -230,7 +236,8 @@
                         android:id="@+id/exploreImage4"
                         android:src="@drawable/handprints"
                         android:scaleType="centerCrop"
-                        android:background="@color/colorWhite"/>
+                        android:background="@color/colorWhite"
+                        android:onClick="goToQ3"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -250,7 +257,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="#808080"/>
+                            android:textColor="#808080"
+                            android:onClick="goToQ3"/>
 
                         <ImageView
                             android:id="@+id/material_icon_button4"
@@ -287,7 +295,8 @@
                         android:id="@+id/exploreImage5"
                         android:background="@color/colorWhite"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/blue_beauty" />
+                        android:src="@drawable/blue_beauty"
+                        android:onClick="goToQ4"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -307,7 +316,8 @@
                             android:text="Blue Beauty"
                             android:textColor="#808080"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:onClick="goToQ4"/>
 
                         <ImageView
                             android:id="@+id/material_icon_button5"
