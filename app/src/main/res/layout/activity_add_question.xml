@@ -120,6 +120,25 @@
             android:onClick="changeOpacity"
             android:background="@drawable/mask" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upload_work_part2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/addNewArtwork"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:onClick="addArtworkDialog"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
     <Button
         android:layout_marginTop="50dp"
         android:layout_gravity="center_horizontal"

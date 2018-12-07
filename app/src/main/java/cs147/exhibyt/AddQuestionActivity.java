@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -73,7 +74,13 @@ public class AddQuestionActivity extends AppCompatActivity {
         System.out.println("Tried adding a question!");
         ds.setQuestionList(qList);
 
+
         Intent myIntent = new Intent(this, MainActivity.class);
         startActivity(myIntent);
+    }
+
+    public void addArtworkDialog(View v) {
+        Toast.makeText(this, "This would allow for users to upload new pieces of art.",
+                Toast.LENGTH_LONG).show();
     }
 }
