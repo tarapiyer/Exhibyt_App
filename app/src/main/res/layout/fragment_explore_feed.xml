@@ -78,7 +78,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Fernssss"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -135,7 +135,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Fractal Kitty"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -193,7 +193,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorAccent"/>
+                            android:textColor="#808080"/>
 
                         <ImageView
                             android:id="@+id/material_icon_button3"
@@ -250,7 +250,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorAccent"/>
+                            android:textColor="#808080"/>
 
                         <ImageView
                             android:id="@+id/material_icon_button4"
@@ -305,7 +305,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Blue Beauty"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#808080"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
