@@ -3,6 +3,7 @@ package cs147.exhibyt;
 import android.content.Intent;
 import android.graphics.Picture;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -39,8 +40,19 @@ public class ViewQuestionActivity extends AppCompatActivity {
             Qs = ds.getOtherUsersQuestions();
             qDet = (Question) Qs.get(Integer.parseInt(questionId));
 
-            TextView userInfo = (TextView) findViewById(R.id.reviewFeedback);
-            userInfo.setText("Review Feedback for " + qDet.getUserName());
+            /*TextView userInfo = (TextView) findViewById(R.id.reviewFeedback);
+            userInfo.setText("Review Feedback for " + qDet.getUserName());*/
+
+            LinearLayout forMeetingOtherPpl = (LinearLayout) findViewById(R.id.meetPerson);
+            forMeetingOtherPpl.setVisibility(View.VISIBLE);
+
+            ImageView img = (ImageView) findViewById(R.id.otherPersonPic);
+            int id = getResources().getIdentifier("cs147.exhibyt:drawable/" + Question.convertPicNameToDrawableName(qDet.getUserName())
+                    , null, null);
+            img.setImageResource(id);
+
+            TextView userInfo = (TextView) findViewById(R.id.otherUserName);
+            userInfo.setText("Meet " + qDet.getUserName());
         } else {
 
             Iterator qIter = Qs.iterator();
