@@ -69,7 +69,7 @@ public class ViewQuestionActivity extends AppCompatActivity {
             final ImageView currImg = new ImageView (this);
 
             //imageView.setTag(i);
-            int id = getResources().getIdentifier("cs147.exhibyt:drawable/" + toLowerCase(q)
+            int id = getResources().getIdentifier("cs147.exhibyt:drawable/" + Question.convertPicNameToDrawableName(q)
                     , null, null);
             currImg.setTag("MOo");
             currImg.setImageResource(id);

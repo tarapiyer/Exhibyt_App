@@ -41,22 +41,37 @@ public class GiveFeedback extends Activity {
         super.onCreate(savedInstanceState);
         id = getIntent().getStringExtra("id");
         setContentView(R.layout.activity_give_feedback);
+
         TextView txt = findViewById(R.id.giveQuestion);
+
         DataSingleton ds = DataSingleton.getInstance();
         ArrayList<Question> questions = ds.getOtherUsersQuestions();
         Question question = questions.get(Integer.parseInt(id));
+
         txt.setText( questions.get(Integer.parseInt(id)).getQText());
+
         ImageView img1 = findViewById(R.id.giveImage1);
-        img1.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" + question.getArtworks().get(0)
+        img1.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" +
+                        Question.convertPicNameToDrawableName(question.getArtworks().get(0))
                 , null, null));
+
+        TextView caption1 = (TextView) findViewById(R.id.caption1);
+        caption1.setText(Question.convertDrawableNameToPicName(question.getArtworks().get(0)));
+
         if(question.getArtworks().size() > 1) {
             ImageView img2 = findViewById(R.id.giveImage2);
-            img2.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" + question.getArtworks().get(1)
+            img2.setImageResource(this.getResources().getIdentifier("cs147.exhibyt:drawable/" +
+                            Question.convertPicNameToDrawableName(question.getArtworks().get(1))
                     , null, null));
+
+            TextView caption2 = (TextView) findViewById(R.id.caption2);
+            caption2.setText(Question.convertDrawableNameToPicName(question.getArtworks().get(1)));
         } else {
             CardView card2 = findViewById(R.id.giveCard2);
             card2.setVisibility(View.GONE);
         }
+
+
     }
 
     public void submitFeedback(View v) {

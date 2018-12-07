@@ -3,6 +3,9 @@ package cs147.exhibyt;
 import java.util.ArrayList;
 import java.util.Date;
 
+import static android.icu.lang.UCharacter.toLowerCase;
+import static android.icu.lang.UCharacter.toUpperCase;
+
 /**
  * Created by Tara on 11/24/2018.
  */
@@ -36,6 +39,21 @@ public class Question {
 
     // There should be a list of images
     // There should also be an id
+
+    public static String convertPicNameToDrawableName (String picName){
+        return toLowerCase(picName.replaceAll(" ", "_"));
+    }
+
+    public static String convertDrawableNameToPicName (String drawableName){
+        String temp = drawableName.replaceAll("_", " ");
+        String[] splited = temp.split("\\s+");
+        String res = "";
+        for (String s : splited) {
+            res = res + (char) toUpperCase(s.charAt(0));
+            res = res + s.substring(1) + " ";
+        }
+        return res.substring(0, res.length()-1);
+    }
 
     public Question() {
         this.questionText = "";

@@ -50,7 +50,7 @@ public class QuestionsAdapter extends ArrayAdapter<Question> {
         ImageView currImg = (ImageView) qsView.findViewById(R.id.firstPic);
         ArrayList<String> imageNames = q.getArtworks();
         if (!imageNames.isEmpty()) {
-            int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/" + toLowerCase(imageNames.get(0))
+            int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/" + Question.convertPicNameToDrawableName(imageNames.get(0))
                     , null, null);
             currImg.setImageResource(id);
         }

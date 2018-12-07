@@ -49,7 +49,7 @@ public class ResponsesAdapter extends ArrayAdapter {
         curr = (TextView) qsView.findViewById(R.id.userCommenting);
         curr.setText(q.getUsername());
         ImageView currImg = (ImageView) qsView.findViewById(R.id.profilePic);
-        int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/" + toLowerCase(q.getUsername())
+        int id = getContext().getResources().getIdentifier("cs147.exhibyt:drawable/" + Question.convertPicNameToDrawableName(q.getUsername())
                 , null, null);
         currImg.setImageResource(id);
         return qsView;
