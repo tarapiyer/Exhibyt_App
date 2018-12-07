@@ -88,8 +88,10 @@ public class ViewQuestionActivity extends AppCompatActivity {
             currImg.setTag("MOo");
             currImg.setImageResource(id);
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            lp.setMargins(15, 15, 15, 15);
+            lp.setMargins(1, 5, 1, 30);
             currImg.setLayoutParams(lp);
+            currImg.getLayoutParams().height =  200 * 2;
+            currImg.getLayoutParams().width = (int) (370 * 1.9);
 
             topLinearLayout.addView(currImg);
 
